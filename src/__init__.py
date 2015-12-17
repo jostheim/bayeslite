@@ -94,24 +94,24 @@ def bql_quote_name(name):
     """
     return sqlite3_quote_name(name)
 
-__all__ = [
-    'BQLError',
-    'BQLParseError',
-    'BayesDB',
-    'BayesDBException',
-    'BayesDBTxnError',
-    'bayesdb_deregister_metamodel',
-    'bayesdb_load_codebook_csv_file',
-    'bayesdb_load_legacy_models',
-    'bayesdb_open',
-    'bayesdb_read_csv',
-    'bayesdb_read_csv_file',
-    'bayesdb_register_metamodel',
-    'bql_quote_name',
-    'IBayesDBMetamodel',
-    'IBayesDBTracer',
-    '__version__',
-]
+# __all__ = [
+#     'BQLError',
+#     'BQLParseError',
+#     'BayesDB',
+#     'BayesDBException',
+#     'BayesDBTxnError',
+#     'bayesdb_deregister_metamodel',
+#     'bayesdb_load_codebook_csv_file',
+#     'bayesdb_load_legacy_models',
+#     'bayesdb_open',
+#     'bayesdb_read_csv',
+#     'bayesdb_read_csv_file',
+#     'bayesdb_register_metamodel',
+#     'bql_quote_name',
+#     'IBayesDBMetamodel',
+#     'IBayesDBTracer',
+#     '__version__',
+# ]
 
 from bayeslite.metamodels.crosscat import CrosscatMetamodel
 from crosscat.LocalEngine import LocalEngine as CrosscatLocalEngine
