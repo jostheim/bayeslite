@@ -17,6 +17,7 @@
 from bayeslite.exception import BayesDBException
 from bayeslite.sqlite3_util import sqlite3_transaction
 from bayeslite.util import cursor_value
+import tables
 
 bayesdb_schema_5 = '''
 PRAGMA user_version = 5;

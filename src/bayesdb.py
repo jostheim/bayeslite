@@ -25,15 +25,18 @@ import bayeslite.bqlfn as bqlfn
 import bayeslite.metamodel as metamodel
 import bayeslite.parse as parse
 import bayeslite.schema as schema
+import bayeslite.schema_hdf5 as schema_hdf5
 import bayeslite.txn as txn
 import bayeslite.weakprng as weakprng
 
 from bayeslite.util import cursor_value
-
+import tables
+
 bayesdb_open_cookie = 0xed63e2c26d621a5b5146a334849d43f0
 
+
 def bayesdb_open(pathname=None, builtin_metamodels=None, seed=None,
-        version=None, compatible=None):
+                 version=None, compatible=None):
     """Open the BayesDB in the file at `pathname`.
 
     If there is no file at `pathname`, it is automatically created.
@@ -53,10 +56,11 @@ def bayesdb_open(pathname=None, builtin_metamodels=None, seed=None,
     if builtin_metamodels is None:
         builtin_metamodels = True
     bdb = BayesDB(bayesdb_open_cookie, pathname=pathname, seed=seed,
-        version=version, compatible=compatible)
+                  version=version, compatible=compatible)
     if builtin_metamodels:
         metamodel.bayesdb_register_builtin_metamodels(bdb)
     return bdb
+
 
 class BayesDB(object):
     """A handle for a Bayesian database in memory or on disk.
@@ -70,13 +74,15 @@ class BayesDB(object):
             ...
     """
 
-    def __init__(self, cookie, pathname=None, seed=None, version=None,
-            compatible=None):
+    def __init__(self, cookie, storage_type="sqlite", pathname=None, seed=None, version=None,
+                 compatible=None):
         if cookie != bayesdb_open_cookie:
             raise ValueError('Do not construct BayesDB objects directly!')
         if pathname is None:
             pathname = ":memory:"
+        self.storage_type = storage_type
         self._sqlite3 = apsw.Connection(pathname)
+        self.hdf5_store = tables.open_file(pathname, 'w')
         self.txn_depth = 0
         self.metamodels = {}
         self.tracer = None
@@ -91,25 +97,32 @@ class BayesDB(object):
         self._py_prng = random.Random(pyrseed)
         nprseed = [self._prng.weakrandom32() for _ in range(4)]
         self._np_prng = numpy.random.RandomState(nprseed)
-        schema.bayesdb_install_schema(self._sqlite3, version=version,
-            compatible=compatible)
-        bqlfn.bayesdb_install_bql(self._sqlite3, self)
-
-        # Cache an empty cursor for convenience.
-        empty_cursor = self._sqlite3.cursor()
-        empty_cursor.execute('')
-        self._empty_cursor = bql.BayesDBCursor(self, empty_cursor)
+        if storage_type == "sqlite":
+            schema.bayesdb_install_schema(self._sqlite3, version=version,
+                                          compatible=compatible)
+            bqlfn.bayesdb_install_bql(self._sqlite3, self)
+            # Cache an empty cursor for convenience.
+            empty_cursor = self._sqlite3.cursor()
+            empty_cursor.execute('')
+            self._empty_cursor = bql.BayesDBCursor(self, empty_cursor)
+        elif storage_type == "hdf5":
+            schema_hdf5.bayesdb_install_schema(self._sqlite3, version=version,
+                                               compatible=compatible)
 
     def __enter__(self):
         return self
+
     def __exit__(self, *_exc_info):
         self.close()
 
     def close(self):
         """Close the database.  Further use is not allowed."""
         assert self.txn_depth == 0, "pending BayesDB transactions"
-        self._sqlite3.close()
-        self._sqlite3 = None
+        if self.storage_type == "sqlite":
+            self._sqlite3.close()
+            self._sqlite3 = None
+        elif self.storage_type == "hdf5":
+            self.hdf5_store.close()
 
     @property
     def py_prng(self):
@@ -208,15 +221,17 @@ class BayesDB(object):
         bindings for parameters in the query, or ``None`` to supply no
         bindings.
         """
+        if self.storage_type == "hdf5":
+            raise NotImplementedError
         if bindings is None:
             bindings = ()
         return self._maybe_trace(
-            self.tracer, self._do_execute, string, bindings)
+                self.tracer, self._do_execute, string, bindings)
 
     def _maybe_trace(self, tracer, meth, string, bindings):
         if tracer and isinstance(tracer, IBayesDBTracer):
             return self._trace_articulately(
-                tracer, meth, string, bindings)
+                    tracer, meth, string, bindings)
         if tracer:
             tracer(string, bindings)
         return meth(string, bindings)
@@ -248,6 +263,8 @@ class BayesDB(object):
             raise
 
     def _do_execute(self, string, bindings):
+        if self.storage_type == "hdf5":
+            raise NotImplementedError
         phrases = parse.parse_bql_string(string)
         phrase = None
         try:
@@ -274,12 +291,18 @@ class BayesDB(object):
         bindings for parameters in the query, or ``None`` to supply no
         bindings.
         """
+        if self.storage_type == "hdf5":
+            raise NotImplementedError
+
         if bindings is None:
             bindings = ()
         return self._maybe_trace(
-            self.sql_tracer, self._do_sql_execute, string, bindings)
+                self.sql_tracer, self._do_sql_execute, string, bindings)
 
     def _do_sql_execute(self, string, bindings):
+        if self.storage_type == "hdf5":
+            raise NotImplementedError
+
         cursor = self._sqlite3.cursor()
         cursor.execute(string, bindings)
         return bql.BayesDBCursor(self, cursor)
@@ -319,7 +342,10 @@ class BayesDB(object):
 
     def last_insert_rowid(self):
         """Return the rowid of the row most recently inserted."""
+        if self.storage_type == "hdf5":
+            raise NotImplementedError
         return self._sqlite3.last_insert_rowid()
+
 
 class IBayesDBTracer(object):
     """BayesDB articulated tracing interface.
@@ -405,8 +431,10 @@ class IBayesDBTracer(object):
         """
         pass
 
+
 class TracingCursor(object):
     """Cursor wrapper for tracing interaction with an underlying cursor."""
+
     def __init__(self, tracer, qid, cursor):
         self._tracer = tracer
         self._qid = qid
@@ -460,9 +488,11 @@ class TracingCursor(object):
     @property
     def connection(self):
         return self._cursor.connection
+
     @property
     def lastrowid(self):
         return self._cursor.lastrowid
+
     @property
     def description(self):
         desc = self._cursor.description
