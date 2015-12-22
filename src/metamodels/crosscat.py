@@ -860,6 +860,8 @@ class CrosscatMetamodel(metamodel.IBayesDBMetamodel):
             initialization=model_config['initialization'],
             row_initialization=model_config['row_initialization'],
         )
+        import sys
+        print "size of model objects during initialize {0}".format(sys.getsizeof(X_L_list)+sys.getsizeof(X_D_list)/1024./1024.)
         if len(modelnos) == 1:  # XXX Ugh.  Fix crosscat so it doesn't do this.
             X_L_list = [X_L_list]
             X_D_list = [X_D_list]
