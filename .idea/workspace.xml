@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db630f1e-6f55-49c1-965a-1684ef77c76d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/__init__.py" afterPath="$PROJECT_DIR$/src/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/metamodels/crosscat.py" afterPath="$PROJECT_DIR$/src/metamodels/crosscat.py" />
     </list>
     <ignored path="bayeslite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +28,7 @@
       <file leaf-file-name="bayesdb.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bayesdb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.407408">
+            <state vertical-scroll-proportion="-253.33333">
               <caret line="473" column="5" selection-start-line="473" selection-start-column="5" selection-end-line="473" selection-end-column="5" />
               <folding />
             </state>
@@ -39,93 +39,103 @@
         <entry file="file://$PROJECT_DIR$/src/metamodels/crosscat.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <marker date="1450803105000" expanded="true" signature="1409:1477" placeholder="INSERT INTO bayesdb_metamodel... " />
-                <marker date="1450803105000" expanded="true" signature="1480:1679" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
-                <marker date="1450803105000" expanded="true" signature="1682:1905" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
-                <marker date="1450803105000" expanded="true" signature="1908:2060" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
-                <marker date="1450803105000" expanded="true" signature="2063:2449" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
-                <marker date="1450803105000" expanded="true" signature="2452:2840" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
-                <marker date="1450803105000" expanded="true" signature="2843:3135" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
-                <marker date="1450803105000" expanded="true" signature="3169:3233" placeholder="UPDATE bayes... " />
-                <marker date="1450803105000" expanded="true" signature="3236:3734" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-                <marker date="1450803105000" expanded="true" signature="3768:3832" placeholder="UPDATE bayes... " />
-                <marker date="1450803105000" expanded="true" signature="3835:3963" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
-                <marker date="1450803105000" expanded="true" signature="4010:4577" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
-                <marker date="1450803105000" expanded="true" signature="4611:4675" placeholder="UPDATE bayes... " />
-                <marker date="1450803105000" expanded="true" signature="4678:5248" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
-                <marker date="1450803105000" expanded="true" signature="5250:5338" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
-                <marker date="1450803105000" expanded="true" signature="5298:5338" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
-                <marker date="1450803105000" expanded="true" signature="5340:5377" placeholder="DROP TABLE b... " />
-                <marker date="1450803105000" expanded="true" signature="5379:5463" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
-                <marker date="1450803105000" expanded="true" signature="5466:5504" placeholder="DROP TABLE b... " />
-                <marker date="1450803105000" expanded="true" signature="5538:5602" placeholder="UPDATE bayes... " />
-                <marker date="1450803105000" expanded="true" signature="5758:5846" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
-                <marker date="1450803105000" expanded="true" signature="5848:6324" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-                <marker date="1450803105000" expanded="true" signature="6326:6418" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-                <marker date="1450803105000" expanded="true" signature="6371:6418" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
-                <marker date="1450803105000" expanded="true" signature="6420:6464" placeholder="DROP TABLE b... " />
-                <marker date="1450803105000" expanded="true" signature="6498:6562" placeholder="UPDATE bayes... " />
-                <marker date="1450803105000" expanded="true" signature="6565:7071" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
-                <marker date="1450803105000" expanded="true" signature="8382:8472" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
-                <marker date="1450803105000" expanded="true" signature="9177:9540" placeholder="SELECT c.nam... bayesdb_column" />
-                <marker date="1450803105000" expanded="true" signature="9780:9924" placeholder="SELECT missi... missing_value" />
-                <marker date="1450803105000" expanded="true" signature="10392:10473" placeholder="SELECT model... bayesdb_crosscat_theta" />
-                <marker date="1450803105000" expanded="true" signature="11013:11113" placeholder="SELECT theta... bayesdb_crosscat_theta" />
-                <marker date="1450803105000" expanded="true" signature="13092:13232" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
-                <marker date="1450803105000" expanded="true" signature="14041:14101" placeholder="SELECT missi... missing_value" />
-                <marker date="1450803105000" expanded="true" signature="15106:15206" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
-                <marker date="1450803105000" expanded="true" signature="18286:18338" placeholder="SELECT versi... bayesdb_metamodel" />
-                <marker date="1450803105000" expanded="true" signature="19304:19396" placeholder="SELECT gener... bayesdb_crosscat_theta" />
-                <marker date="1450803105000" expanded="true" signature="19470:19638" placeholder="UPDATE bayes... " />
-                <marker date="1450803105000" expanded="true" signature="20714:20958" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
-                <marker date="1450803105000" expanded="true" signature="20839:20957" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
-                <marker date="1450803105000" expanded="true" signature="21091:21184" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
-                <marker date="1450803105000" expanded="true" signature="21452:21620" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-                <marker date="1450803105000" expanded="true" signature="26319:26333" placeholder="SELECT * FRO... missing_value" />
-                <marker date="1450803105000" expanded="true" signature="26986:27107" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
-                <marker date="1450803105000" expanded="true" signature="27647:27817" placeholder="INSERT INTO bayesdb_crosscat_column... " />
-                <marker date="1450803105000" expanded="true" signature="27887:28057" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
-                <marker date="1450803105000" expanded="true" signature="29328:29349" placeholder="SELECT COUNT... missing_value" />
-                <marker date="1450803105000" expanded="true" signature="29439:29482" placeholder="SELECT _rowi... " />
-                <marker date="1450803105000" expanded="true" signature="30147:30190" placeholder="SELECT _rowi... " />
-                <marker date="1450803105000" expanded="true" signature="30275:30407" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-                <marker date="1450803105000" expanded="true" signature="30765:30913" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
-                <marker date="1450803105000" expanded="true" signature="32630:32713" placeholder="DELETE FROM " />
-                <marker date="1450803105000" expanded="true" signature="32862:32951" placeholder="DELETE FROM " />
-                <marker date="1450803105000" expanded="true" signature="33095:33172" placeholder="DELETE FROM " />
-                <marker date="1450803105000" expanded="true" signature="33308:33389" placeholder="DELETE FROM " />
-                <marker date="1450803105000" expanded="true" signature="33526:33612" placeholder="DELETE FROM " />
-                <marker date="1450803105000" expanded="true" signature="33746:33824" placeholder="DELETE FROM " />
-                <marker date="1450803105000" expanded="true" signature="33959:34039" placeholder="DELETE FROM " />
-                <marker date="1450803105000" expanded="true" signature="34638:34756" placeholder="UPDATE bayes... " />
-                <marker date="1450803105000" expanded="true" signature="36951:37099" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
-                <marker date="1450803105000" expanded="true" signature="38210:38267" placeholder="DELETE FROM " />
-                <marker date="1450803105000" expanded="true" signature="38334:38397" placeholder="DELETE FROM " />
-                <marker date="1450803105000" expanded="true" signature="38604:38697" placeholder="DELETE FROM " />
-                <marker date="1450803105000" expanded="true" signature="38764:38863" placeholder="DELETE FROM " />
-                <marker date="1450803105000" expanded="true" signature="39825:39987" placeholder="UPDATE bayes... " />
-                <marker date="1450803105000" expanded="true" signature="40048:40180" placeholder="UPDATE bayes... " />
-                <marker date="1450803105000" expanded="true" signature="40242:40542" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-                <marker date="1450803105000" expanded="true" signature="45096:45302" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
-                <marker date="1450803105000" expanded="true" signature="53165:53196" placeholder="INSERT INTO missing_value... " />
-                <marker date="1450803105000" expanded="true" signature="54627:54962" placeholder="SELECT m.mod... bayesdb_generator_model" />
-                <marker date="1450803105000" expanded="true" signature="55655:55791" placeholder="UPDATE bayes... " />
-                <marker date="1450803105000" expanded="true" signature="57580:57637" placeholder="SELECT DISTI... missing_value" />
-                <marker date="1450803105000" expanded="true" signature="59888:59981" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
-                <marker date="1450803105000" expanded="true" signature="60550:60643" placeholder="SELECT colno... bayesdb_crosscat_column" />
-                <marker date="1450803105000" expanded="true" signature="61246:61365" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
+                <marker date="1450886625000" expanded="true" signature="1421:1489" placeholder="INSERT INTO bayesdb_metamodel... " />
+                <marker date="1450886625000" expanded="true" signature="1492:1691" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
+                <marker date="1450886625000" expanded="true" signature="1694:1917" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
+                <marker date="1450886625000" expanded="true" signature="1920:2072" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
+                <marker date="1450886625000" expanded="true" signature="2075:2461" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
+                <marker date="1450886625000" expanded="true" signature="2464:2852" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
+                <marker date="1450886625000" expanded="true" signature="2855:3147" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
+                <marker date="1450886625000" expanded="true" signature="3181:3245" placeholder="UPDATE bayes... " />
+                <marker date="1450886625000" expanded="true" signature="3248:3746" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+                <marker date="1450886625000" expanded="true" signature="3780:3844" placeholder="UPDATE bayes... " />
+                <marker date="1450886625000" expanded="true" signature="3847:3975" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
+                <marker date="1450886625000" expanded="true" signature="4022:4589" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
+                <marker date="1450886625000" expanded="true" signature="4623:4687" placeholder="UPDATE bayes... " />
+                <marker date="1450886625000" expanded="true" signature="4690:5260" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
+                <marker date="1450886625000" expanded="true" signature="5262:5350" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
+                <marker date="1450886625000" expanded="true" signature="5310:5350" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
+                <marker date="1450886625000" expanded="true" signature="5352:5389" placeholder="DROP TABLE b... " />
+                <marker date="1450886625000" expanded="true" signature="5391:5475" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
+                <marker date="1450886625000" expanded="true" signature="5478:5516" placeholder="DROP TABLE b... " />
+                <marker date="1450886625000" expanded="true" signature="5550:5614" placeholder="UPDATE bayes... " />
+                <marker date="1450886625000" expanded="true" signature="5770:5858" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
+                <marker date="1450886625000" expanded="true" signature="5860:6336" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+                <marker date="1450886625000" expanded="true" signature="6338:6430" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+                <marker date="1450886625000" expanded="true" signature="6383:6430" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
+                <marker date="1450886625000" expanded="true" signature="6432:6476" placeholder="DROP TABLE b... " />
+                <marker date="1450886625000" expanded="true" signature="6510:6574" placeholder="UPDATE bayes... " />
+                <marker date="1450886625000" expanded="true" signature="6577:7083" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
+                <marker date="1450886625000" expanded="true" signature="8394:8484" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
+                <marker date="1450886625000" expanded="true" signature="9189:9552" placeholder="SELECT c.nam... bayesdb_column" />
+                <marker date="1450886625000" expanded="true" signature="9792:9936" placeholder="SELECT missi... missing_value" />
+                <marker date="1450886625000" expanded="true" signature="10404:10485" placeholder="SELECT model... bayesdb_crosscat_theta" />
+                <marker date="1450886625000" expanded="true" signature="11025:11125" placeholder="SELECT theta... bayesdb_crosscat_theta" />
+                <marker date="1450886625000" expanded="true" signature="13104:13244" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
+                <marker date="1450886625000" expanded="true" signature="14053:14113" placeholder="SELECT missi... missing_value" />
+                <marker date="1450886625000" expanded="true" signature="15118:15218" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
+                <marker date="1450886625000" expanded="true" signature="18298:18350" placeholder="SELECT versi... bayesdb_metamodel" />
+                <marker date="1450886625000" expanded="true" signature="19316:19408" placeholder="SELECT gener... bayesdb_crosscat_theta" />
+                <marker date="1450886625000" expanded="true" signature="19482:19650" placeholder="UPDATE bayes... " />
+                <marker date="1450886625000" expanded="true" signature="20726:20970" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
+                <marker date="1450886625000" expanded="true" signature="20851:20969" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
+                <marker date="1450886625000" expanded="true" signature="21103:21196" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
+                <marker date="1450886625000" expanded="true" signature="21464:21632" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+                <marker date="1450886625000" expanded="true" signature="26331:26345" placeholder="SELECT * FRO... missing_value" />
+                <marker date="1450886625000" expanded="true" signature="26998:27119" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
+                <marker date="1450886625000" expanded="true" signature="27659:27829" placeholder="INSERT INTO bayesdb_crosscat_column... " />
+                <marker date="1450886625000" expanded="true" signature="27899:28069" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
+                <marker date="1450886625000" expanded="true" signature="29340:29361" placeholder="SELECT COUNT... missing_value" />
+                <marker date="1450886625000" expanded="true" signature="29451:29494" placeholder="SELECT _rowi... " />
+                <marker date="1450886625000" expanded="true" signature="30159:30202" placeholder="SELECT _rowi... " />
+                <marker date="1450886625000" expanded="true" signature="30287:30419" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+                <marker date="1450886625000" expanded="true" signature="30777:30925" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
+                <marker date="1450886625000" expanded="true" signature="32642:32725" placeholder="DELETE FROM " />
+                <marker date="1450886625000" expanded="true" signature="32874:32963" placeholder="DELETE FROM " />
+                <marker date="1450886625000" expanded="true" signature="33107:33184" placeholder="DELETE FROM " />
+                <marker date="1450886625000" expanded="true" signature="33320:33401" placeholder="DELETE FROM " />
+                <marker date="1450886625000" expanded="true" signature="33538:33624" placeholder="DELETE FROM " />
+                <marker date="1450886625000" expanded="true" signature="33758:33836" placeholder="DELETE FROM " />
+                <marker date="1450886625000" expanded="true" signature="33971:34051" placeholder="DELETE FROM " />
+                <marker date="1450886625000" expanded="true" signature="34650:34768" placeholder="UPDATE bayes... " />
+                <marker date="1450886625000" expanded="true" signature="36963:37111" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
+                <marker date="1450886625000" expanded="true" signature="38222:38279" placeholder="DELETE FROM " />
+                <marker date="1450886625000" expanded="true" signature="38346:38409" placeholder="DELETE FROM " />
+                <marker date="1450886625000" expanded="true" signature="38616:38709" placeholder="DELETE FROM " />
+                <marker date="1450886625000" expanded="true" signature="38776:38875" placeholder="DELETE FROM " />
+                <marker date="1450886625000" expanded="true" signature="39837:39999" placeholder="UPDATE bayes... " />
+                <marker date="1450886625000" expanded="true" signature="40060:40192" placeholder="UPDATE bayes... " />
+                <marker date="1450886625000" expanded="true" signature="40254:40554" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+                <marker date="1450886625000" expanded="true" signature="45112:45318" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
+                <marker date="1450886625000" expanded="true" signature="53181:53212" placeholder="INSERT INTO missing_value... " />
+                <marker date="1450886625000" expanded="true" signature="54643:54978" placeholder="SELECT m.mod... bayesdb_generator_model" />
+                <marker date="1450886625000" expanded="true" signature="55671:55807" placeholder="UPDATE bayes... " />
+                <marker date="1450886625000" expanded="true" signature="57596:57653" placeholder="SELECT DISTI... missing_value" />
+                <marker date="1450886625000" expanded="true" signature="59904:59997" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
+                <marker date="1450886625000" expanded="true" signature="60566:60659" placeholder="SELECT colno... bayesdb_crosscat_column" />
+                <marker date="1450886625000" expanded="true" signature="61262:61381" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.097510375">
+              <caret line="204" column="15" selection-start-line="204" selection-start-column="15" selection-end-line="204" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6043956">
-              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.2962962">
+              <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
               <folding>
                 <element signature="e#2415#2452#0" expanded="true" />
               </folding>
@@ -155,6 +165,8 @@
         <option value="$PROJECT_DIR$/src/parse.py" />
         <option value="$PROJECT_DIR$/src/bayesdb.py" />
         <option value="$PROJECT_DIR$/src/__init__.py" />
+        <option value="$PROJECT_DIR$/src/metamodels/crosscat.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
@@ -164,8 +176,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="961" />
-    <option name="y" value="346" />
+    <option name="x" value="1033" />
+    <option name="y" value="448" />
     <option name="width" value="1440" />
     <option name="height" value="827" />
   </component>
@@ -484,7 +496,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="961" y="346" width="1440" height="827" extended-state="0" />
+    <frame x="1033" y="448" width="1440" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25277779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -525,14 +537,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shell/src/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -596,81 +600,81 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1189" column="8" selection-start-line="1189" selection-start-column="8" selection-end-line="1189" selection-end-column="8" />
           <folding>
-            <marker date="1450803105000" expanded="true" signature="1409:1477" placeholder="INSERT INTO bayesdb_metamodel... " />
-            <marker date="1450803105000" expanded="true" signature="1480:1679" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
-            <marker date="1450803105000" expanded="true" signature="1682:1905" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
-            <marker date="1450803105000" expanded="true" signature="1908:2060" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
-            <marker date="1450803105000" expanded="true" signature="2063:2449" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
-            <marker date="1450803105000" expanded="true" signature="2452:2840" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
-            <marker date="1450803105000" expanded="true" signature="2843:3135" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="3169:3233" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="3236:3734" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450803105000" expanded="true" signature="3768:3832" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="3835:3963" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
-            <marker date="1450803105000" expanded="true" signature="4010:4577" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="4611:4675" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="4678:5248" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
-            <marker date="1450803105000" expanded="true" signature="5250:5338" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450803105000" expanded="true" signature="5298:5338" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="5340:5377" placeholder="DROP TABLE b... " />
-            <marker date="1450803105000" expanded="true" signature="5379:5463" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450803105000" expanded="true" signature="5466:5504" placeholder="DROP TABLE b... " />
-            <marker date="1450803105000" expanded="true" signature="5538:5602" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="5758:5846" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
-            <marker date="1450803105000" expanded="true" signature="5848:6324" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450803105000" expanded="true" signature="6326:6418" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450803105000" expanded="true" signature="6371:6418" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
-            <marker date="1450803105000" expanded="true" signature="6420:6464" placeholder="DROP TABLE b... " />
-            <marker date="1450803105000" expanded="true" signature="6498:6562" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="6565:7071" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
-            <marker date="1450803105000" expanded="true" signature="8382:8472" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
-            <marker date="1450803105000" expanded="true" signature="9177:9540" placeholder="SELECT c.nam... bayesdb_column" />
-            <marker date="1450803105000" expanded="true" signature="9780:9924" placeholder="SELECT missi... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="10392:10473" placeholder="SELECT model... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="11013:11113" placeholder="SELECT theta... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="13092:13232" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="14041:14101" placeholder="SELECT missi... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="15106:15206" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="18286:18338" placeholder="SELECT versi... bayesdb_metamodel" />
-            <marker date="1450803105000" expanded="true" signature="19304:19396" placeholder="SELECT gener... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="19470:19638" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="20714:20958" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
-            <marker date="1450803105000" expanded="true" signature="20839:20957" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
-            <marker date="1450803105000" expanded="true" signature="21091:21184" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
-            <marker date="1450803105000" expanded="true" signature="21452:21620" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450803105000" expanded="true" signature="26319:26333" placeholder="SELECT * FRO... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="26986:27107" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
-            <marker date="1450803105000" expanded="true" signature="27647:27817" placeholder="INSERT INTO bayesdb_crosscat_column... " />
-            <marker date="1450803105000" expanded="true" signature="27887:28057" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
-            <marker date="1450803105000" expanded="true" signature="29328:29349" placeholder="SELECT COUNT... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="29439:29482" placeholder="SELECT _rowi... " />
-            <marker date="1450803105000" expanded="true" signature="30147:30190" placeholder="SELECT _rowi... " />
-            <marker date="1450803105000" expanded="true" signature="30275:30407" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450803105000" expanded="true" signature="30765:30913" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
-            <marker date="1450803105000" expanded="true" signature="32630:32713" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="32862:32951" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33095:33172" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33308:33389" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33526:33612" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33746:33824" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33959:34039" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="34638:34756" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="36951:37099" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
-            <marker date="1450803105000" expanded="true" signature="38210:38267" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="38334:38397" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="38604:38697" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="38764:38863" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="39825:39987" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="40048:40180" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="40242:40542" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450803105000" expanded="true" signature="45096:45302" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
-            <marker date="1450803105000" expanded="true" signature="53165:53196" placeholder="INSERT INTO missing_value... " />
-            <marker date="1450803105000" expanded="true" signature="54627:54962" placeholder="SELECT m.mod... bayesdb_generator_model" />
-            <marker date="1450803105000" expanded="true" signature="55655:55791" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="57580:57637" placeholder="SELECT DISTI... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="59888:59981" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
-            <marker date="1450803105000" expanded="true" signature="60550:60643" placeholder="SELECT colno... bayesdb_crosscat_column" />
-            <marker date="1450803105000" expanded="true" signature="61246:61365" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
+            <marker date="1450886625000" expanded="true" signature="1421:1489" placeholder="INSERT INTO bayesdb_metamodel... " />
+            <marker date="1450886625000" expanded="true" signature="1492:1691" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
+            <marker date="1450886625000" expanded="true" signature="1694:1917" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
+            <marker date="1450886625000" expanded="true" signature="1920:2072" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
+            <marker date="1450886625000" expanded="true" signature="2075:2461" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
+            <marker date="1450886625000" expanded="true" signature="2464:2852" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
+            <marker date="1450886625000" expanded="true" signature="2855:3147" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="3181:3245" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="3248:3746" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+            <marker date="1450886625000" expanded="true" signature="3780:3844" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="3847:3975" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
+            <marker date="1450886625000" expanded="true" signature="4022:4589" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="4623:4687" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="4690:5260" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
+            <marker date="1450886625000" expanded="true" signature="5262:5350" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
+            <marker date="1450886625000" expanded="true" signature="5310:5350" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="5352:5389" placeholder="DROP TABLE b... " />
+            <marker date="1450886625000" expanded="true" signature="5391:5475" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
+            <marker date="1450886625000" expanded="true" signature="5478:5516" placeholder="DROP TABLE b... " />
+            <marker date="1450886625000" expanded="true" signature="5550:5614" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="5770:5858" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
+            <marker date="1450886625000" expanded="true" signature="5860:6336" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+            <marker date="1450886625000" expanded="true" signature="6338:6430" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+            <marker date="1450886625000" expanded="true" signature="6383:6430" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
+            <marker date="1450886625000" expanded="true" signature="6432:6476" placeholder="DROP TABLE b... " />
+            <marker date="1450886625000" expanded="true" signature="6510:6574" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="6577:7083" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
+            <marker date="1450886625000" expanded="true" signature="8394:8484" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
+            <marker date="1450886625000" expanded="true" signature="9189:9552" placeholder="SELECT c.nam... bayesdb_column" />
+            <marker date="1450886625000" expanded="true" signature="9792:9936" placeholder="SELECT missi... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="10404:10485" placeholder="SELECT model... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="11025:11125" placeholder="SELECT theta... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="13104:13244" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="14053:14113" placeholder="SELECT missi... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="15118:15218" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="18298:18350" placeholder="SELECT versi... bayesdb_metamodel" />
+            <marker date="1450886625000" expanded="true" signature="19316:19408" placeholder="SELECT gener... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="19482:19650" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="20726:20970" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
+            <marker date="1450886625000" expanded="true" signature="20851:20969" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
+            <marker date="1450886625000" expanded="true" signature="21103:21196" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
+            <marker date="1450886625000" expanded="true" signature="21464:21632" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+            <marker date="1450886625000" expanded="true" signature="26331:26345" placeholder="SELECT * FRO... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="26998:27119" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
+            <marker date="1450886625000" expanded="true" signature="27659:27829" placeholder="INSERT INTO bayesdb_crosscat_column... " />
+            <marker date="1450886625000" expanded="true" signature="27899:28069" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
+            <marker date="1450886625000" expanded="true" signature="29340:29361" placeholder="SELECT COUNT... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="29451:29494" placeholder="SELECT _rowi... " />
+            <marker date="1450886625000" expanded="true" signature="30159:30202" placeholder="SELECT _rowi... " />
+            <marker date="1450886625000" expanded="true" signature="30287:30419" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+            <marker date="1450886625000" expanded="true" signature="30777:30925" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
+            <marker date="1450886625000" expanded="true" signature="32642:32725" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="32874:32963" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33107:33184" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33320:33401" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33538:33624" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33758:33836" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33971:34051" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="34650:34768" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="36963:37111" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
+            <marker date="1450886625000" expanded="true" signature="38222:38279" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="38346:38409" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="38616:38709" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="38776:38875" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="39837:39999" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="40060:40192" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="40254:40554" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+            <marker date="1450886625000" expanded="true" signature="45112:45318" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
+            <marker date="1450886625000" expanded="true" signature="53181:53212" placeholder="INSERT INTO missing_value... " />
+            <marker date="1450886625000" expanded="true" signature="54643:54978" placeholder="SELECT m.mod... bayesdb_generator_model" />
+            <marker date="1450886625000" expanded="true" signature="55671:55807" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="57596:57653" placeholder="SELECT DISTI... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="59904:59997" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
+            <marker date="1450886625000" expanded="true" signature="60566:60659" placeholder="SELECT colno... bayesdb_crosscat_column" />
+            <marker date="1450886625000" expanded="true" signature="61262:61381" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
           </folding>
         </state>
       </provider>
@@ -748,81 +752,81 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1189" column="8" selection-start-line="1189" selection-start-column="8" selection-end-line="1189" selection-end-column="8" />
           <folding>
-            <marker date="1450803105000" expanded="true" signature="1409:1477" placeholder="INSERT INTO bayesdb_metamodel... " />
-            <marker date="1450803105000" expanded="true" signature="1480:1679" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
-            <marker date="1450803105000" expanded="true" signature="1682:1905" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
-            <marker date="1450803105000" expanded="true" signature="1908:2060" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
-            <marker date="1450803105000" expanded="true" signature="2063:2449" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
-            <marker date="1450803105000" expanded="true" signature="2452:2840" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
-            <marker date="1450803105000" expanded="true" signature="2843:3135" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="3169:3233" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="3236:3734" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450803105000" expanded="true" signature="3768:3832" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="3835:3963" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
-            <marker date="1450803105000" expanded="true" signature="4010:4577" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="4611:4675" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="4678:5248" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
-            <marker date="1450803105000" expanded="true" signature="5250:5338" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450803105000" expanded="true" signature="5298:5338" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="5340:5377" placeholder="DROP TABLE b... " />
-            <marker date="1450803105000" expanded="true" signature="5379:5463" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450803105000" expanded="true" signature="5466:5504" placeholder="DROP TABLE b... " />
-            <marker date="1450803105000" expanded="true" signature="5538:5602" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="5758:5846" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
-            <marker date="1450803105000" expanded="true" signature="5848:6324" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450803105000" expanded="true" signature="6326:6418" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450803105000" expanded="true" signature="6371:6418" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
-            <marker date="1450803105000" expanded="true" signature="6420:6464" placeholder="DROP TABLE b... " />
-            <marker date="1450803105000" expanded="true" signature="6498:6562" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="6565:7071" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
-            <marker date="1450803105000" expanded="true" signature="8382:8472" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
-            <marker date="1450803105000" expanded="true" signature="9177:9540" placeholder="SELECT c.nam... bayesdb_column" />
-            <marker date="1450803105000" expanded="true" signature="9780:9924" placeholder="SELECT missi... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="10392:10473" placeholder="SELECT model... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="11013:11113" placeholder="SELECT theta... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="13092:13232" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="14041:14101" placeholder="SELECT missi... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="15106:15206" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="18286:18338" placeholder="SELECT versi... bayesdb_metamodel" />
-            <marker date="1450803105000" expanded="true" signature="19304:19396" placeholder="SELECT gener... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="19470:19638" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="20714:20958" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
-            <marker date="1450803105000" expanded="true" signature="20839:20957" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
-            <marker date="1450803105000" expanded="true" signature="21091:21184" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
-            <marker date="1450803105000" expanded="true" signature="21452:21620" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450803105000" expanded="true" signature="26319:26333" placeholder="SELECT * FRO... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="26986:27107" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
-            <marker date="1450803105000" expanded="true" signature="27647:27817" placeholder="INSERT INTO bayesdb_crosscat_column... " />
-            <marker date="1450803105000" expanded="true" signature="27887:28057" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
-            <marker date="1450803105000" expanded="true" signature="29328:29349" placeholder="SELECT COUNT... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="29439:29482" placeholder="SELECT _rowi... " />
-            <marker date="1450803105000" expanded="true" signature="30147:30190" placeholder="SELECT _rowi... " />
-            <marker date="1450803105000" expanded="true" signature="30275:30407" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450803105000" expanded="true" signature="30765:30913" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
-            <marker date="1450803105000" expanded="true" signature="32630:32713" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="32862:32951" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33095:33172" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33308:33389" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33526:33612" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33746:33824" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33959:34039" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="34638:34756" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="36951:37099" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
-            <marker date="1450803105000" expanded="true" signature="38210:38267" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="38334:38397" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="38604:38697" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="38764:38863" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="39825:39987" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="40048:40180" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="40242:40542" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450803105000" expanded="true" signature="45096:45302" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
-            <marker date="1450803105000" expanded="true" signature="53165:53196" placeholder="INSERT INTO missing_value... " />
-            <marker date="1450803105000" expanded="true" signature="54627:54962" placeholder="SELECT m.mod... bayesdb_generator_model" />
-            <marker date="1450803105000" expanded="true" signature="55655:55791" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="57580:57637" placeholder="SELECT DISTI... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="59888:59981" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
-            <marker date="1450803105000" expanded="true" signature="60550:60643" placeholder="SELECT colno... bayesdb_crosscat_column" />
-            <marker date="1450803105000" expanded="true" signature="61246:61365" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
+            <marker date="1450886625000" expanded="true" signature="1421:1489" placeholder="INSERT INTO bayesdb_metamodel... " />
+            <marker date="1450886625000" expanded="true" signature="1492:1691" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
+            <marker date="1450886625000" expanded="true" signature="1694:1917" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
+            <marker date="1450886625000" expanded="true" signature="1920:2072" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
+            <marker date="1450886625000" expanded="true" signature="2075:2461" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
+            <marker date="1450886625000" expanded="true" signature="2464:2852" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
+            <marker date="1450886625000" expanded="true" signature="2855:3147" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="3181:3245" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="3248:3746" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+            <marker date="1450886625000" expanded="true" signature="3780:3844" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="3847:3975" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
+            <marker date="1450886625000" expanded="true" signature="4022:4589" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="4623:4687" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="4690:5260" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
+            <marker date="1450886625000" expanded="true" signature="5262:5350" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
+            <marker date="1450886625000" expanded="true" signature="5310:5350" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="5352:5389" placeholder="DROP TABLE b... " />
+            <marker date="1450886625000" expanded="true" signature="5391:5475" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
+            <marker date="1450886625000" expanded="true" signature="5478:5516" placeholder="DROP TABLE b... " />
+            <marker date="1450886625000" expanded="true" signature="5550:5614" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="5770:5858" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
+            <marker date="1450886625000" expanded="true" signature="5860:6336" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+            <marker date="1450886625000" expanded="true" signature="6338:6430" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+            <marker date="1450886625000" expanded="true" signature="6383:6430" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
+            <marker date="1450886625000" expanded="true" signature="6432:6476" placeholder="DROP TABLE b... " />
+            <marker date="1450886625000" expanded="true" signature="6510:6574" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="6577:7083" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
+            <marker date="1450886625000" expanded="true" signature="8394:8484" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
+            <marker date="1450886625000" expanded="true" signature="9189:9552" placeholder="SELECT c.nam... bayesdb_column" />
+            <marker date="1450886625000" expanded="true" signature="9792:9936" placeholder="SELECT missi... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="10404:10485" placeholder="SELECT model... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="11025:11125" placeholder="SELECT theta... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="13104:13244" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="14053:14113" placeholder="SELECT missi... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="15118:15218" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="18298:18350" placeholder="SELECT versi... bayesdb_metamodel" />
+            <marker date="1450886625000" expanded="true" signature="19316:19408" placeholder="SELECT gener... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="19482:19650" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="20726:20970" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
+            <marker date="1450886625000" expanded="true" signature="20851:20969" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
+            <marker date="1450886625000" expanded="true" signature="21103:21196" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
+            <marker date="1450886625000" expanded="true" signature="21464:21632" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+            <marker date="1450886625000" expanded="true" signature="26331:26345" placeholder="SELECT * FRO... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="26998:27119" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
+            <marker date="1450886625000" expanded="true" signature="27659:27829" placeholder="INSERT INTO bayesdb_crosscat_column... " />
+            <marker date="1450886625000" expanded="true" signature="27899:28069" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
+            <marker date="1450886625000" expanded="true" signature="29340:29361" placeholder="SELECT COUNT... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="29451:29494" placeholder="SELECT _rowi... " />
+            <marker date="1450886625000" expanded="true" signature="30159:30202" placeholder="SELECT _rowi... " />
+            <marker date="1450886625000" expanded="true" signature="30287:30419" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+            <marker date="1450886625000" expanded="true" signature="30777:30925" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
+            <marker date="1450886625000" expanded="true" signature="32642:32725" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="32874:32963" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33107:33184" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33320:33401" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33538:33624" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33758:33836" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33971:34051" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="34650:34768" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="36963:37111" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
+            <marker date="1450886625000" expanded="true" signature="38222:38279" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="38346:38409" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="38616:38709" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="38776:38875" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="39837:39999" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="40060:40192" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="40254:40554" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+            <marker date="1450886625000" expanded="true" signature="45112:45318" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
+            <marker date="1450886625000" expanded="true" signature="53181:53212" placeholder="INSERT INTO missing_value... " />
+            <marker date="1450886625000" expanded="true" signature="54643:54978" placeholder="SELECT m.mod... bayesdb_generator_model" />
+            <marker date="1450886625000" expanded="true" signature="55671:55807" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="57596:57653" placeholder="SELECT DISTI... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="59904:59997" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
+            <marker date="1450886625000" expanded="true" signature="60566:60659" placeholder="SELECT colno... bayesdb_crosscat_column" />
+            <marker date="1450886625000" expanded="true" signature="61262:61381" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
           </folding>
         </state>
       </provider>
@@ -884,81 +888,81 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1189" column="8" selection-start-line="1189" selection-start-column="8" selection-end-line="1189" selection-end-column="8" />
           <folding>
-            <marker date="1450803105000" expanded="true" signature="1409:1477" placeholder="INSERT INTO bayesdb_metamodel... " />
-            <marker date="1450803105000" expanded="true" signature="1480:1679" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
-            <marker date="1450803105000" expanded="true" signature="1682:1905" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
-            <marker date="1450803105000" expanded="true" signature="1908:2060" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
-            <marker date="1450803105000" expanded="true" signature="2063:2449" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
-            <marker date="1450803105000" expanded="true" signature="2452:2840" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
-            <marker date="1450803105000" expanded="true" signature="2843:3135" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="3169:3233" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="3236:3734" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450803105000" expanded="true" signature="3768:3832" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="3835:3963" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
-            <marker date="1450803105000" expanded="true" signature="4010:4577" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="4611:4675" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="4678:5248" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
-            <marker date="1450803105000" expanded="true" signature="5250:5338" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450803105000" expanded="true" signature="5298:5338" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="5340:5377" placeholder="DROP TABLE b... " />
-            <marker date="1450803105000" expanded="true" signature="5379:5463" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450803105000" expanded="true" signature="5466:5504" placeholder="DROP TABLE b... " />
-            <marker date="1450803105000" expanded="true" signature="5538:5602" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="5758:5846" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
-            <marker date="1450803105000" expanded="true" signature="5848:6324" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450803105000" expanded="true" signature="6326:6418" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450803105000" expanded="true" signature="6371:6418" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
-            <marker date="1450803105000" expanded="true" signature="6420:6464" placeholder="DROP TABLE b... " />
-            <marker date="1450803105000" expanded="true" signature="6498:6562" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="6565:7071" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
-            <marker date="1450803105000" expanded="true" signature="8382:8472" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
-            <marker date="1450803105000" expanded="true" signature="9177:9540" placeholder="SELECT c.nam... bayesdb_column" />
-            <marker date="1450803105000" expanded="true" signature="9780:9924" placeholder="SELECT missi... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="10392:10473" placeholder="SELECT model... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="11013:11113" placeholder="SELECT theta... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="13092:13232" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="14041:14101" placeholder="SELECT missi... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="15106:15206" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="18286:18338" placeholder="SELECT versi... bayesdb_metamodel" />
-            <marker date="1450803105000" expanded="true" signature="19304:19396" placeholder="SELECT gener... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="19470:19638" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="20714:20958" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
-            <marker date="1450803105000" expanded="true" signature="20839:20957" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
-            <marker date="1450803105000" expanded="true" signature="21091:21184" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
-            <marker date="1450803105000" expanded="true" signature="21452:21620" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450803105000" expanded="true" signature="26319:26333" placeholder="SELECT * FRO... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="26986:27107" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
-            <marker date="1450803105000" expanded="true" signature="27647:27817" placeholder="INSERT INTO bayesdb_crosscat_column... " />
-            <marker date="1450803105000" expanded="true" signature="27887:28057" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
-            <marker date="1450803105000" expanded="true" signature="29328:29349" placeholder="SELECT COUNT... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="29439:29482" placeholder="SELECT _rowi... " />
-            <marker date="1450803105000" expanded="true" signature="30147:30190" placeholder="SELECT _rowi... " />
-            <marker date="1450803105000" expanded="true" signature="30275:30407" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450803105000" expanded="true" signature="30765:30913" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
-            <marker date="1450803105000" expanded="true" signature="32630:32713" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="32862:32951" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33095:33172" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33308:33389" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33526:33612" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33746:33824" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33959:34039" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="34638:34756" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="36951:37099" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
-            <marker date="1450803105000" expanded="true" signature="38210:38267" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="38334:38397" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="38604:38697" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="38764:38863" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="39825:39987" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="40048:40180" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="40242:40542" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450803105000" expanded="true" signature="45096:45302" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
-            <marker date="1450803105000" expanded="true" signature="53165:53196" placeholder="INSERT INTO missing_value... " />
-            <marker date="1450803105000" expanded="true" signature="54627:54962" placeholder="SELECT m.mod... bayesdb_generator_model" />
-            <marker date="1450803105000" expanded="true" signature="55655:55791" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="57580:57637" placeholder="SELECT DISTI... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="59888:59981" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
-            <marker date="1450803105000" expanded="true" signature="60550:60643" placeholder="SELECT colno... bayesdb_crosscat_column" />
-            <marker date="1450803105000" expanded="true" signature="61246:61365" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
+            <marker date="1450886625000" expanded="true" signature="1421:1489" placeholder="INSERT INTO bayesdb_metamodel... " />
+            <marker date="1450886625000" expanded="true" signature="1492:1691" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
+            <marker date="1450886625000" expanded="true" signature="1694:1917" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
+            <marker date="1450886625000" expanded="true" signature="1920:2072" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
+            <marker date="1450886625000" expanded="true" signature="2075:2461" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
+            <marker date="1450886625000" expanded="true" signature="2464:2852" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
+            <marker date="1450886625000" expanded="true" signature="2855:3147" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="3181:3245" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="3248:3746" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+            <marker date="1450886625000" expanded="true" signature="3780:3844" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="3847:3975" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
+            <marker date="1450886625000" expanded="true" signature="4022:4589" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="4623:4687" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="4690:5260" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
+            <marker date="1450886625000" expanded="true" signature="5262:5350" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
+            <marker date="1450886625000" expanded="true" signature="5310:5350" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="5352:5389" placeholder="DROP TABLE b... " />
+            <marker date="1450886625000" expanded="true" signature="5391:5475" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
+            <marker date="1450886625000" expanded="true" signature="5478:5516" placeholder="DROP TABLE b... " />
+            <marker date="1450886625000" expanded="true" signature="5550:5614" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="5770:5858" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
+            <marker date="1450886625000" expanded="true" signature="5860:6336" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+            <marker date="1450886625000" expanded="true" signature="6338:6430" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+            <marker date="1450886625000" expanded="true" signature="6383:6430" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
+            <marker date="1450886625000" expanded="true" signature="6432:6476" placeholder="DROP TABLE b... " />
+            <marker date="1450886625000" expanded="true" signature="6510:6574" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="6577:7083" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
+            <marker date="1450886625000" expanded="true" signature="8394:8484" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
+            <marker date="1450886625000" expanded="true" signature="9189:9552" placeholder="SELECT c.nam... bayesdb_column" />
+            <marker date="1450886625000" expanded="true" signature="9792:9936" placeholder="SELECT missi... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="10404:10485" placeholder="SELECT model... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="11025:11125" placeholder="SELECT theta... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="13104:13244" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="14053:14113" placeholder="SELECT missi... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="15118:15218" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="18298:18350" placeholder="SELECT versi... bayesdb_metamodel" />
+            <marker date="1450886625000" expanded="true" signature="19316:19408" placeholder="SELECT gener... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="19482:19650" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="20726:20970" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
+            <marker date="1450886625000" expanded="true" signature="20851:20969" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
+            <marker date="1450886625000" expanded="true" signature="21103:21196" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
+            <marker date="1450886625000" expanded="true" signature="21464:21632" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+            <marker date="1450886625000" expanded="true" signature="26331:26345" placeholder="SELECT * FRO... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="26998:27119" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
+            <marker date="1450886625000" expanded="true" signature="27659:27829" placeholder="INSERT INTO bayesdb_crosscat_column... " />
+            <marker date="1450886625000" expanded="true" signature="27899:28069" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
+            <marker date="1450886625000" expanded="true" signature="29340:29361" placeholder="SELECT COUNT... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="29451:29494" placeholder="SELECT _rowi... " />
+            <marker date="1450886625000" expanded="true" signature="30159:30202" placeholder="SELECT _rowi... " />
+            <marker date="1450886625000" expanded="true" signature="30287:30419" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+            <marker date="1450886625000" expanded="true" signature="30777:30925" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
+            <marker date="1450886625000" expanded="true" signature="32642:32725" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="32874:32963" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33107:33184" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33320:33401" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33538:33624" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33758:33836" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33971:34051" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="34650:34768" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="36963:37111" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
+            <marker date="1450886625000" expanded="true" signature="38222:38279" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="38346:38409" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="38616:38709" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="38776:38875" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="39837:39999" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="40060:40192" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="40254:40554" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+            <marker date="1450886625000" expanded="true" signature="45112:45318" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
+            <marker date="1450886625000" expanded="true" signature="53181:53212" placeholder="INSERT INTO missing_value... " />
+            <marker date="1450886625000" expanded="true" signature="54643:54978" placeholder="SELECT m.mod... bayesdb_generator_model" />
+            <marker date="1450886625000" expanded="true" signature="55671:55807" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="57596:57653" placeholder="SELECT DISTI... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="59904:59997" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
+            <marker date="1450886625000" expanded="true" signature="60566:60659" placeholder="SELECT colno... bayesdb_crosscat_column" />
+            <marker date="1450886625000" expanded="true" signature="61262:61381" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
           </folding>
         </state>
       </provider>
@@ -1179,102 +1183,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bayesdb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.407408">
-          <caret line="473" column="5" selection-start-line="473" selection-start-column="5" selection-end-line="473" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metamodels/crosscat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
-          <folding>
-            <marker date="1450803105000" expanded="true" signature="1409:1477" placeholder="INSERT INTO bayesdb_metamodel... " />
-            <marker date="1450803105000" expanded="true" signature="1480:1679" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
-            <marker date="1450803105000" expanded="true" signature="1682:1905" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
-            <marker date="1450803105000" expanded="true" signature="1908:2060" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
-            <marker date="1450803105000" expanded="true" signature="2063:2449" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
-            <marker date="1450803105000" expanded="true" signature="2452:2840" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
-            <marker date="1450803105000" expanded="true" signature="2843:3135" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="3169:3233" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="3236:3734" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450803105000" expanded="true" signature="3768:3832" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="3835:3963" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
-            <marker date="1450803105000" expanded="true" signature="4010:4577" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="4611:4675" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="4678:5248" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
-            <marker date="1450803105000" expanded="true" signature="5250:5338" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450803105000" expanded="true" signature="5298:5338" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="5340:5377" placeholder="DROP TABLE b... " />
-            <marker date="1450803105000" expanded="true" signature="5379:5463" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450803105000" expanded="true" signature="5466:5504" placeholder="DROP TABLE b... " />
-            <marker date="1450803105000" expanded="true" signature="5538:5602" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="5758:5846" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
-            <marker date="1450803105000" expanded="true" signature="5848:6324" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450803105000" expanded="true" signature="6326:6418" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450803105000" expanded="true" signature="6371:6418" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
-            <marker date="1450803105000" expanded="true" signature="6420:6464" placeholder="DROP TABLE b... " />
-            <marker date="1450803105000" expanded="true" signature="6498:6562" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="6565:7071" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
-            <marker date="1450803105000" expanded="true" signature="8382:8472" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
-            <marker date="1450803105000" expanded="true" signature="9177:9540" placeholder="SELECT c.nam... bayesdb_column" />
-            <marker date="1450803105000" expanded="true" signature="9780:9924" placeholder="SELECT missi... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="10392:10473" placeholder="SELECT model... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="11013:11113" placeholder="SELECT theta... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="13092:13232" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="14041:14101" placeholder="SELECT missi... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="15106:15206" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
-            <marker date="1450803105000" expanded="true" signature="18286:18338" placeholder="SELECT versi... bayesdb_metamodel" />
-            <marker date="1450803105000" expanded="true" signature="19304:19396" placeholder="SELECT gener... bayesdb_crosscat_theta" />
-            <marker date="1450803105000" expanded="true" signature="19470:19638" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="20714:20958" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
-            <marker date="1450803105000" expanded="true" signature="20839:20957" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
-            <marker date="1450803105000" expanded="true" signature="21091:21184" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
-            <marker date="1450803105000" expanded="true" signature="21452:21620" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450803105000" expanded="true" signature="26319:26333" placeholder="SELECT * FRO... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="26986:27107" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
-            <marker date="1450803105000" expanded="true" signature="27647:27817" placeholder="INSERT INTO bayesdb_crosscat_column... " />
-            <marker date="1450803105000" expanded="true" signature="27887:28057" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
-            <marker date="1450803105000" expanded="true" signature="29328:29349" placeholder="SELECT COUNT... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="29439:29482" placeholder="SELECT _rowi... " />
-            <marker date="1450803105000" expanded="true" signature="30147:30190" placeholder="SELECT _rowi... " />
-            <marker date="1450803105000" expanded="true" signature="30275:30407" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450803105000" expanded="true" signature="30765:30913" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
-            <marker date="1450803105000" expanded="true" signature="32630:32713" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="32862:32951" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33095:33172" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33308:33389" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33526:33612" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33746:33824" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="33959:34039" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="34638:34756" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="36951:37099" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
-            <marker date="1450803105000" expanded="true" signature="38210:38267" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="38334:38397" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="38604:38697" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="38764:38863" placeholder="DELETE FROM " />
-            <marker date="1450803105000" expanded="true" signature="39825:39987" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="40048:40180" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="40242:40542" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450803105000" expanded="true" signature="45096:45302" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
-            <marker date="1450803105000" expanded="true" signature="53165:53196" placeholder="INSERT INTO missing_value... " />
-            <marker date="1450803105000" expanded="true" signature="54627:54962" placeholder="SELECT m.mod... bayesdb_generator_model" />
-            <marker date="1450803105000" expanded="true" signature="55655:55791" placeholder="UPDATE bayes... " />
-            <marker date="1450803105000" expanded="true" signature="57580:57637" placeholder="SELECT DISTI... missing_value" />
-            <marker date="1450803105000" expanded="true" signature="59888:59981" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
-            <marker date="1450803105000" expanded="true" signature="60550:60643" placeholder="SELECT colno... bayesdb_crosscat_column" />
-            <marker date="1450803105000" expanded="true" signature="61246:61365" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/virtualenvs/edison/lib/python3.5/site-packages/crosscat/LocalEngine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39419088">
           <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2962962">
+          <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+          <folding>
+            <element signature="e#2415#2452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bayesdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-253.33333">
+          <caret line="473" column="5" selection-start-line="473" selection-start-column="5" selection-end-line="473" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1287,13 +1217,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+    <entry file="file://$PROJECT_DIR$/src/metamodels/crosscat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6043956">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#2415#2452#0" expanded="true" />
+            <marker date="1450886625000" expanded="true" signature="1421:1489" placeholder="INSERT INTO bayesdb_metamodel... " />
+            <marker date="1450886625000" expanded="true" signature="1492:1691" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
+            <marker date="1450886625000" expanded="true" signature="1694:1917" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
+            <marker date="1450886625000" expanded="true" signature="1920:2072" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
+            <marker date="1450886625000" expanded="true" signature="2075:2461" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
+            <marker date="1450886625000" expanded="true" signature="2464:2852" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
+            <marker date="1450886625000" expanded="true" signature="2855:3147" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="3181:3245" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="3248:3746" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+            <marker date="1450886625000" expanded="true" signature="3780:3844" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="3847:3975" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
+            <marker date="1450886625000" expanded="true" signature="4022:4589" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="4623:4687" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="4690:5260" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
+            <marker date="1450886625000" expanded="true" signature="5262:5350" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
+            <marker date="1450886625000" expanded="true" signature="5310:5350" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="5352:5389" placeholder="DROP TABLE b... " />
+            <marker date="1450886625000" expanded="true" signature="5391:5475" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
+            <marker date="1450886625000" expanded="true" signature="5478:5516" placeholder="DROP TABLE b... " />
+            <marker date="1450886625000" expanded="true" signature="5550:5614" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="5770:5858" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
+            <marker date="1450886625000" expanded="true" signature="5860:6336" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+            <marker date="1450886625000" expanded="true" signature="6338:6430" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+            <marker date="1450886625000" expanded="true" signature="6383:6430" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
+            <marker date="1450886625000" expanded="true" signature="6432:6476" placeholder="DROP TABLE b... " />
+            <marker date="1450886625000" expanded="true" signature="6510:6574" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="6577:7083" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
+            <marker date="1450886625000" expanded="true" signature="8394:8484" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
+            <marker date="1450886625000" expanded="true" signature="9189:9552" placeholder="SELECT c.nam... bayesdb_column" />
+            <marker date="1450886625000" expanded="true" signature="9792:9936" placeholder="SELECT missi... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="10404:10485" placeholder="SELECT model... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="11025:11125" placeholder="SELECT theta... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="13104:13244" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="14053:14113" placeholder="SELECT missi... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="15118:15218" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
+            <marker date="1450886625000" expanded="true" signature="18298:18350" placeholder="SELECT versi... bayesdb_metamodel" />
+            <marker date="1450886625000" expanded="true" signature="19316:19408" placeholder="SELECT gener... bayesdb_crosscat_theta" />
+            <marker date="1450886625000" expanded="true" signature="19482:19650" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="20726:20970" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
+            <marker date="1450886625000" expanded="true" signature="20851:20969" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
+            <marker date="1450886625000" expanded="true" signature="21103:21196" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
+            <marker date="1450886625000" expanded="true" signature="21464:21632" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+            <marker date="1450886625000" expanded="true" signature="26331:26345" placeholder="SELECT * FRO... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="26998:27119" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
+            <marker date="1450886625000" expanded="true" signature="27659:27829" placeholder="INSERT INTO bayesdb_crosscat_column... " />
+            <marker date="1450886625000" expanded="true" signature="27899:28069" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
+            <marker date="1450886625000" expanded="true" signature="29340:29361" placeholder="SELECT COUNT... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="29451:29494" placeholder="SELECT _rowi... " />
+            <marker date="1450886625000" expanded="true" signature="30159:30202" placeholder="SELECT _rowi... " />
+            <marker date="1450886625000" expanded="true" signature="30287:30419" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+            <marker date="1450886625000" expanded="true" signature="30777:30925" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
+            <marker date="1450886625000" expanded="true" signature="32642:32725" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="32874:32963" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33107:33184" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33320:33401" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33538:33624" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33758:33836" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="33971:34051" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="34650:34768" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="36963:37111" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
+            <marker date="1450886625000" expanded="true" signature="38222:38279" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="38346:38409" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="38616:38709" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="38776:38875" placeholder="DELETE FROM " />
+            <marker date="1450886625000" expanded="true" signature="39837:39999" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="40060:40192" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="40254:40554" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+            <marker date="1450886625000" expanded="true" signature="45112:45318" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
+            <marker date="1450886625000" expanded="true" signature="53181:53212" placeholder="INSERT INTO missing_value... " />
+            <marker date="1450886625000" expanded="true" signature="54643:54978" placeholder="SELECT m.mod... bayesdb_generator_model" />
+            <marker date="1450886625000" expanded="true" signature="55671:55807" placeholder="UPDATE bayes... " />
+            <marker date="1450886625000" expanded="true" signature="57596:57653" placeholder="SELECT DISTI... missing_value" />
+            <marker date="1450886625000" expanded="true" signature="59904:59997" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
+            <marker date="1450886625000" expanded="true" signature="60566:60659" placeholder="SELECT colno... bayesdb_crosscat_column" />
+            <marker date="1450886625000" expanded="true" signature="61262:61381" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.097510375">
+          <caret line="204" column="15" selection-start-line="204" selection-start-column="15" selection-end-line="204" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
