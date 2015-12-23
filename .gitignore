@@ -13,4 +13,6 @@
 /src/grammar.sha256
 /src/grammar.sha256.tmp
 /src/version.py
+/.idea
+.idea/*
 __pycache__/

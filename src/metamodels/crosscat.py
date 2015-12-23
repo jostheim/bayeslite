@@ -40,6 +40,7 @@ from bayeslite.stats import arithmetic_mean
 from bayeslite.util import casefold
 from bayeslite.util import cursor_value
 from bayeslite.util import unique
+import tqdm
 
 crosscat_schema_1 = '''
 INSERT INTO bayesdb_metamodel (name, version) VALUES ('crosscat', 1);
@@ -966,7 +967,7 @@ class CrosscatMetamodel(metamodel.IBayesDBMetamodel):
                 ckpt_deadline = min(ckpt_deadline, deadline)
         if ckpt_iterations is not None and iterations is not None:
             ckpt_iterations = min(ckpt_iterations, iterations)
-        while (iterations is None or 0 < iterations) and \
+        while tqdm(iterations is None or 0 < iterations) and \
               (max_seconds is None or time.time() < deadline):
             n_steps = 1
             if ckpt_seconds is not None:

@@ -115,8 +115,11 @@ def bql_quote_name(name):
 
 from bayeslite.metamodels.crosscat import CrosscatMetamodel
 from crosscat.LocalEngine import LocalEngine as CrosscatLocalEngine
+from crosscat.MultiprocessingEngine import MultiprocessingEngine as CrossCatMultiProcessingEngine
 
-bayesdb_builtin_metamodel(CrosscatMetamodel(CrosscatLocalEngine(seed=0)))
+# bayesdb_builtin_metamodel(CrosscatMetamodel(CrosscatLocalEngine(seed=0)))
+
+bayesdb_builtin_metamodel(CrosscatMetamodel(CrossCatMultiProcessingEngine(seed=0, cpu_count=8)))
 
 import bayeslite.remote
 import os
