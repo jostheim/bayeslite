@@ -15,4 +15,5 @@
 /src/version.py
 /.idea
 .idea/
+.idea/*
 __pycache__/

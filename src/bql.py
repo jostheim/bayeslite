@@ -25,7 +25,7 @@ language) are executed directly.
 
 import apsw
 
-import bayeslite.ast as ast
+import bayeslite.bayeslite_ast as ast2
 import bayeslite.bqlfn as bqlfn
 import bayeslite.compiler as compiler
 import bayeslite.core as core
@@ -38,7 +38,7 @@ from bayeslite.util import cursor_value
 
 def execute_phrase(bdb, phrase, bindings=()):
     """Execute the BQL AST phrase `phrase` and return a cursor of results."""
-    if isinstance(phrase, ast.Parametrized):
+    if isinstance(phrase, ast2.Parametrized):
         n_numpar = phrase.n_numpar
         nampar_map = phrase.nampar_map
         phrase = phrase.phrase
@@ -48,7 +48,7 @@ def execute_phrase(bdb, phrase, bindings=()):
         nampar_map = None
         # Ignore extraneous bindings.  XXX Bad idea?
 
-    if ast.is_query(phrase):
+    if ast2.is_query(phrase):
         # Compile the query in the transaction in case we need to
         # execute subqueries to determine column lists.  Compiling is
         # a quick tree descent, so this should be fast.
@@ -59,20 +59,20 @@ def execute_phrase(bdb, phrase, bindings=()):
         return execute_wound(bdb, winders, unwinders, out.getvalue(),
             out.getbindings())
 
-    if isinstance(phrase, ast.Begin):
+    if isinstance(phrase, ast2.Begin):
         txn.bayesdb_begin_transaction(bdb)
         return empty_cursor(bdb)
 
-    if isinstance(phrase, ast.Rollback):
+    if isinstance(phrase, ast2.Rollback):
         txn.bayesdb_rollback_transaction(bdb)
         return empty_cursor(bdb)
 
-    if isinstance(phrase, ast.Commit):
+    if isinstance(phrase, ast2.Commit):
         txn.bayesdb_commit_transaction(bdb)
         return empty_cursor(bdb)
 
-    if isinstance(phrase, ast.CreateTabAs):
-        assert ast.is_query(phrase.query)
+    if isinstance(phrase, ast2.CreateTabAs):
+        assert ast2.is_query(phrase.query)
         with bdb.savepoint():
             out = compiler.Output(n_numpar, nampar_map, bindings)
             qt = sqlite3_quote_name(phrase.name)
@@ -85,8 +85,8 @@ def execute_phrase(bdb, phrase, bindings=()):
                 bdb.sql_execute(out.getvalue(), out.getbindings())
         return empty_cursor(bdb)
 
-    if isinstance(phrase, ast.CreateTabSim):
-        assert isinstance(phrase.simulation, ast.Simulate)
+    if isinstance(phrase, ast2.CreateTabSim):
+        assert isinstance(phrase.simulation, ast2.Simulate)
         with bdb.savepoint():
             if core.bayesdb_has_generator(bdb, phrase.name):
                 raise BQLError(bdb, 'Name already defined as generator: %s' %
@@ -173,7 +173,7 @@ def execute_phrase(bdb, phrase, bindings=()):
                 bdb.sql_execute(insert_sql, row)
         return empty_cursor(bdb)
 
-    if isinstance(phrase, ast.DropTab):
+    if isinstance(phrase, ast2.DropTab):
         with bdb.savepoint():
             sql = 'SELECT COUNT(*) FROM bayesdb_generator WHERE tabname = ?'
             cursor = bdb.sql_execute(sql, (phrase.name,))
@@ -189,13 +189,13 @@ def execute_phrase(bdb, phrase, bindings=()):
             qt = sqlite3_quote_name(phrase.name)
             return bdb.sql_execute('DROP TABLE %s%s' % (ifexists, qt))
 
-    if isinstance(phrase, ast.AlterTab):
+    if isinstance(phrase, ast2.AlterTab):
         with bdb.savepoint():
             table = phrase.table
             if not core.bayesdb_has_table(bdb, table):
                 raise BQLError(bdb, 'No such table: %s' % (repr(table),))
             for cmd in phrase.commands:
-                if isinstance(cmd, ast.AlterTabRenameTab):
+                if isinstance(cmd, ast2.AlterTabRenameTab):
                     # If the names differ only in case, we have to do
                     # some extra work because SQLite will reject the
                     # table rename.  Note that we may even have table
@@ -224,7 +224,7 @@ def execute_phrase(bdb, phrase, bindings=()):
                         rename_table(bdb, table, cmd.name)
                     # Remember the new name for subsequent commands.
                     table = cmd.name
-                elif isinstance(cmd, ast.AlterTabRenameCol):
+                elif isinstance(cmd, ast2.AlterTabRenameCol):
                     # XXX Need to deal with this in the compiler.
                     raise NotImplementedError('Renaming columns'
                         ' not yet implemented.')
@@ -267,7 +267,7 @@ def execute_phrase(bdb, phrase, bindings=()):
                                 generator_id)
                             metamodel.rename_column(bdb, generator_id,
                                 old_folded, new_folded)
-                elif isinstance(cmd, ast.AlterTabSetDefGen):
+                elif isinstance(cmd, ast2.AlterTabSetDefGen):
                     if not core.bayesdb_has_generator(bdb, cmd.generator):
                         raise BQLError(bdb, 'No such generator: %s' %
                             (repr(cmd.generator),))
@@ -286,7 +286,7 @@ def execute_phrase(bdb, phrase, bindings=()):
                     total_changes = bdb._sqlite3.totalchanges()
                     bdb.sql_execute(set_default_sql, (generator_id,))
                     assert bdb._sqlite3.totalchanges() - total_changes == 1
-                elif isinstance(cmd, ast.AlterTabUnsetDefGen):
+                elif isinstance(cmd, ast2.AlterTabUnsetDefGen):
                     unset_default_sql = '''
                         UPDATE bayesdb_generator SET defaultp = 0
                             WHERE tabname = ? AND defaultp
@@ -299,7 +299,7 @@ def execute_phrase(bdb, phrase, bindings=()):
                         (cmd,)
         return empty_cursor(bdb)
 
-    if isinstance(phrase, ast.CreateGen):
+    if isinstance(phrase, ast2.CreateGen):
         # Find the metamodel.
         if phrase.metamodel not in bdb.metamodels:
             raise BQLError(bdb, 'No such metamodel: %s' %
@@ -320,7 +320,7 @@ def execute_phrase(bdb, phrase, bindings=()):
         # All done.  Nothing to return.
         return empty_cursor(bdb)
 
-    if isinstance(phrase, ast.DropGen):
+    if isinstance(phrase, ast2.DropGen):
         with bdb.savepoint():
             if not core.bayesdb_has_generator(bdb, phrase.name):
                 if phrase.ifexists:
@@ -348,7 +348,7 @@ def execute_phrase(bdb, phrase, bindings=()):
             bdb.sql_execute(drop_generator_sql, (generator_id,))
         return empty_cursor(bdb)
 
-    if isinstance(phrase, ast.AlterGen):
+    if isinstance(phrase, ast2.AlterGen):
         with bdb.savepoint():
             generator = phrase.generator
             if not core.bayesdb_has_generator(bdb, generator):
@@ -356,7 +356,7 @@ def execute_phrase(bdb, phrase, bindings=()):
                     (repr(generator),))
             generator_id = core.bayesdb_get_generator(bdb, generator)
             for cmd in phrase.commands:
-                if isinstance(cmd, ast.AlterGenRenameGen):
+                if isinstance(cmd, ast2.AlterGenRenameGen):
                     # Make sure nothing else has this name.
                     if casefold(generator) != casefold(cmd.name):
                         if core.bayesdb_has_table(bdb, cmd.name):
@@ -383,7 +383,7 @@ def execute_phrase(bdb, phrase, bindings=()):
                         (repr(cmd),)
         return empty_cursor(bdb)
 
-    if isinstance(phrase, ast.InitModels):
+    if isinstance(phrase, ast2.InitModels):
         if not core.bayesdb_has_generator_default(bdb, phrase.generator):
             raise BQLError(bdb, 'No such generator: %s' %
                 (phrase.generator,))
@@ -431,7 +431,7 @@ def execute_phrase(bdb, phrase, bindings=()):
                 model_config)
         return empty_cursor(bdb)
 
-    if isinstance(phrase, ast.AnalyzeModels):
+    if isinstance(phrase, ast2.AnalyzeModels):
         if not phrase.wait:
             raise NotImplementedError('No background analysis -- use WAIT.')
         # WARNING: It is the metamodel's responsibility to work in a
@@ -459,7 +459,7 @@ def execute_phrase(bdb, phrase, bindings=()):
             ckpt_seconds=phrase.ckpt_seconds)
         return empty_cursor(bdb)
 
-    if isinstance(phrase, ast.DropModels):
+    if isinstance(phrase, ast2.DropModels):
         with bdb.savepoint():
             generator_id = core.bayesdb_get_generator_default(bdb,
                 phrase.generator)

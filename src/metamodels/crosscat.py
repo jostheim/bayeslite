@@ -40,7 +40,7 @@ from bayeslite.stats import arithmetic_mean
 from bayeslite.util import casefold
 from bayeslite.util import cursor_value
 from bayeslite.util import unique
-import tqdm
+from tqdm import *
 
 crosscat_schema_1 = '''
 INSERT INTO bayesdb_metamodel (name, version) VALUES ('crosscat', 1);
@@ -288,9 +288,18 @@ class CrosscatMetamodel(metamodel.IBayesDBMetamodel):
                     AND s.sql_rowid = t._rowid_
         ''' % (','.join('t.%s' % (qcn,) for qcn in qcns), qt),
             (generator_id,))
-        return [[crosscat_value_to_code(bdb, generator_id, M_c, colno, value)
-                for value, (_name, colno) in zip(row, columns)]
-            for row in cursor]
+        t = []
+        for row in cursor:
+            from array import array
+            t1 = array('f')
+            for value, (_name, colno) in zip(row, columns):
+                v = crosscat_value_to_code(bdb, generator_id, M_c, colno, value)
+                t1.append(v)
+            t.append(t1)
+        return t
+        # return [[crosscat_value_to_code(bdb, generator_id, M_c, colno, value)
+        #         for value, (_name, colno) in zip(row, columns)]
+        #     for row in cursor]
 
     def _crosscat_thetas(self, bdb, generator_id, modelno):
         if modelno is not None:
@@ -965,7 +974,7 @@ class CrosscatMetamodel(metamodel.IBayesDBMetamodel):
                 ckpt_deadline = min(ckpt_deadline, deadline)
         if ckpt_iterations is not None and iterations is not None:
             ckpt_iterations = min(ckpt_iterations, iterations)
-        while tqdm(iterations is None or 0 < iterations) and \
+        while iterations is None or 0 < iterations and \
               (max_seconds is None or time.time() < deadline):
             n_steps = 1
             if ckpt_seconds is not None:
@@ -1011,6 +1020,7 @@ class CrosscatMetamodel(metamodel.IBayesDBMetamodel):
                         X_D=X_D_list,
                         n_steps=n_steps,
                     )
+                    print "finished ", n_steps
                     iterations_in_ckpt += n_steps
                     if iterations is not None:
                         assert n_steps <= iterations

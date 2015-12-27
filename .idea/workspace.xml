@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db630f1e-6f55-49c1-965a-1684ef77c76d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
+    <list default="true" id="d9076ace-b7cf-4f51-b355-8256ec618598" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/metamodels/crosscat.py" afterPath="$PROJECT_DIR$/src/metamodels/crosscat.py" />
     </list>
     <ignored path="bayeslite.iws" />
@@ -24,108 +25,109 @@
     <favorites_list name="bayeslite" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="bayesdb.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bayesdb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-253.33333">
-              <caret line="473" column="5" selection-start-line="473" selection-start-column="5" selection-end-line="473" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crosscat.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="crosscat.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/metamodels/crosscat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4461153">
+              <caret line="290" column="38" selection-start-line="290" selection-start-column="38" selection-end-line="290" selection-end-column="38" />
               <folding>
-                <marker date="1450886625000" expanded="true" signature="1421:1489" placeholder="INSERT INTO bayesdb_metamodel... " />
-                <marker date="1450886625000" expanded="true" signature="1492:1691" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
-                <marker date="1450886625000" expanded="true" signature="1694:1917" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
-                <marker date="1450886625000" expanded="true" signature="1920:2072" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
-                <marker date="1450886625000" expanded="true" signature="2075:2461" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
-                <marker date="1450886625000" expanded="true" signature="2464:2852" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
-                <marker date="1450886625000" expanded="true" signature="2855:3147" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
-                <marker date="1450886625000" expanded="true" signature="3181:3245" placeholder="UPDATE bayes... " />
-                <marker date="1450886625000" expanded="true" signature="3248:3746" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-                <marker date="1450886625000" expanded="true" signature="3780:3844" placeholder="UPDATE bayes... " />
-                <marker date="1450886625000" expanded="true" signature="3847:3975" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
-                <marker date="1450886625000" expanded="true" signature="4022:4589" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
-                <marker date="1450886625000" expanded="true" signature="4623:4687" placeholder="UPDATE bayes... " />
-                <marker date="1450886625000" expanded="true" signature="4690:5260" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
-                <marker date="1450886625000" expanded="true" signature="5262:5350" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
-                <marker date="1450886625000" expanded="true" signature="5310:5350" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
-                <marker date="1450886625000" expanded="true" signature="5352:5389" placeholder="DROP TABLE b... " />
-                <marker date="1450886625000" expanded="true" signature="5391:5475" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
-                <marker date="1450886625000" expanded="true" signature="5478:5516" placeholder="DROP TABLE b... " />
-                <marker date="1450886625000" expanded="true" signature="5550:5614" placeholder="UPDATE bayes... " />
-                <marker date="1450886625000" expanded="true" signature="5770:5858" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
-                <marker date="1450886625000" expanded="true" signature="5860:6336" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-                <marker date="1450886625000" expanded="true" signature="6338:6430" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-                <marker date="1450886625000" expanded="true" signature="6383:6430" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
-                <marker date="1450886625000" expanded="true" signature="6432:6476" placeholder="DROP TABLE b... " />
-                <marker date="1450886625000" expanded="true" signature="6510:6574" placeholder="UPDATE bayes... " />
-                <marker date="1450886625000" expanded="true" signature="6577:7083" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
-                <marker date="1450886625000" expanded="true" signature="8394:8484" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
-                <marker date="1450886625000" expanded="true" signature="9189:9552" placeholder="SELECT c.nam... bayesdb_column" />
-                <marker date="1450886625000" expanded="true" signature="9792:9936" placeholder="SELECT missi... missing_value" />
-                <marker date="1450886625000" expanded="true" signature="10404:10485" placeholder="SELECT model... bayesdb_crosscat_theta" />
-                <marker date="1450886625000" expanded="true" signature="11025:11125" placeholder="SELECT theta... bayesdb_crosscat_theta" />
-                <marker date="1450886625000" expanded="true" signature="13104:13244" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
-                <marker date="1450886625000" expanded="true" signature="14053:14113" placeholder="SELECT missi... missing_value" />
-                <marker date="1450886625000" expanded="true" signature="15118:15218" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
-                <marker date="1450886625000" expanded="true" signature="18298:18350" placeholder="SELECT versi... bayesdb_metamodel" />
-                <marker date="1450886625000" expanded="true" signature="19316:19408" placeholder="SELECT gener... bayesdb_crosscat_theta" />
-                <marker date="1450886625000" expanded="true" signature="19482:19650" placeholder="UPDATE bayes... " />
-                <marker date="1450886625000" expanded="true" signature="20726:20970" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
-                <marker date="1450886625000" expanded="true" signature="20851:20969" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
-                <marker date="1450886625000" expanded="true" signature="21103:21196" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
-                <marker date="1450886625000" expanded="true" signature="21464:21632" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-                <marker date="1450886625000" expanded="true" signature="26331:26345" placeholder="SELECT * FRO... missing_value" />
-                <marker date="1450886625000" expanded="true" signature="26998:27119" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
-                <marker date="1450886625000" expanded="true" signature="27659:27829" placeholder="INSERT INTO bayesdb_crosscat_column... " />
-                <marker date="1450886625000" expanded="true" signature="27899:28069" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
-                <marker date="1450886625000" expanded="true" signature="29340:29361" placeholder="SELECT COUNT... missing_value" />
-                <marker date="1450886625000" expanded="true" signature="29451:29494" placeholder="SELECT _rowi... " />
-                <marker date="1450886625000" expanded="true" signature="30159:30202" placeholder="SELECT _rowi... " />
-                <marker date="1450886625000" expanded="true" signature="30287:30419" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-                <marker date="1450886625000" expanded="true" signature="30777:30925" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
-                <marker date="1450886625000" expanded="true" signature="32642:32725" placeholder="DELETE FROM " />
-                <marker date="1450886625000" expanded="true" signature="32874:32963" placeholder="DELETE FROM " />
-                <marker date="1450886625000" expanded="true" signature="33107:33184" placeholder="DELETE FROM " />
-                <marker date="1450886625000" expanded="true" signature="33320:33401" placeholder="DELETE FROM " />
-                <marker date="1450886625000" expanded="true" signature="33538:33624" placeholder="DELETE FROM " />
-                <marker date="1450886625000" expanded="true" signature="33758:33836" placeholder="DELETE FROM " />
-                <marker date="1450886625000" expanded="true" signature="33971:34051" placeholder="DELETE FROM " />
-                <marker date="1450886625000" expanded="true" signature="34650:34768" placeholder="UPDATE bayes... " />
-                <marker date="1450886625000" expanded="true" signature="36963:37111" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
-                <marker date="1450886625000" expanded="true" signature="38222:38279" placeholder="DELETE FROM " />
-                <marker date="1450886625000" expanded="true" signature="38346:38409" placeholder="DELETE FROM " />
-                <marker date="1450886625000" expanded="true" signature="38616:38709" placeholder="DELETE FROM " />
-                <marker date="1450886625000" expanded="true" signature="38776:38875" placeholder="DELETE FROM " />
-                <marker date="1450886625000" expanded="true" signature="39837:39999" placeholder="UPDATE bayes... " />
-                <marker date="1450886625000" expanded="true" signature="40060:40192" placeholder="UPDATE bayes... " />
-                <marker date="1450886625000" expanded="true" signature="40254:40554" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-                <marker date="1450886625000" expanded="true" signature="45112:45318" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
-                <marker date="1450886625000" expanded="true" signature="53181:53212" placeholder="INSERT INTO missing_value... " />
-                <marker date="1450886625000" expanded="true" signature="54643:54978" placeholder="SELECT m.mod... bayesdb_generator_model" />
-                <marker date="1450886625000" expanded="true" signature="55671:55807" placeholder="UPDATE bayes... " />
-                <marker date="1450886625000" expanded="true" signature="57596:57653" placeholder="SELECT DISTI... missing_value" />
-                <marker date="1450886625000" expanded="true" signature="59904:59997" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
-                <marker date="1450886625000" expanded="true" signature="60566:60659" placeholder="SELECT colno... bayesdb_crosscat_column" />
-                <marker date="1450886625000" expanded="true" signature="61262:61381" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
+                <element signature="e#914#925#0" expanded="true" />
+                <marker date="1450994440000" expanded="true" signature="1428:1496" placeholder="INSERT INTO bayesdb_metamodel... " />
+                <marker date="1450994440000" expanded="true" signature="1499:1698" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
+                <marker date="1450994440000" expanded="true" signature="1701:1924" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
+                <marker date="1450994440000" expanded="true" signature="1927:2079" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
+                <marker date="1450994440000" expanded="true" signature="2082:2468" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
+                <marker date="1450994440000" expanded="true" signature="2471:2859" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
+                <marker date="1450994440000" expanded="true" signature="2862:3154" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
+                <marker date="1450994440000" expanded="true" signature="3188:3252" placeholder="UPDATE bayes... " />
+                <marker date="1450994440000" expanded="true" signature="3255:3753" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+                <marker date="1450994440000" expanded="true" signature="3787:3851" placeholder="UPDATE bayes... " />
+                <marker date="1450994440000" expanded="true" signature="3854:3982" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
+                <marker date="1450994440000" expanded="true" signature="4029:4596" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
+                <marker date="1450994440000" expanded="true" signature="4630:4694" placeholder="UPDATE bayes... " />
+                <marker date="1450994440000" expanded="true" signature="4697:5267" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
+                <marker date="1450994440000" expanded="true" signature="5269:5357" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
+                <marker date="1450994440000" expanded="true" signature="5317:5357" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
+                <marker date="1450994440000" expanded="true" signature="5359:5396" placeholder="DROP TABLE b... " />
+                <marker date="1450994440000" expanded="true" signature="5398:5482" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
+                <marker date="1450994440000" expanded="true" signature="5485:5523" placeholder="DROP TABLE b... " />
+                <marker date="1450994440000" expanded="true" signature="5557:5621" placeholder="UPDATE bayes... " />
+                <marker date="1450994440000" expanded="true" signature="5777:5865" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
+                <marker date="1450994440000" expanded="true" signature="5867:6343" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+                <marker date="1450994440000" expanded="true" signature="6345:6437" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+                <marker date="1450994440000" expanded="true" signature="6390:6437" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
+                <marker date="1450994440000" expanded="true" signature="6439:6483" placeholder="DROP TABLE b... " />
+                <marker date="1450994440000" expanded="true" signature="6517:6581" placeholder="UPDATE bayes... " />
+                <marker date="1450994440000" expanded="true" signature="6584:7090" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
+                <marker date="1450994440000" expanded="true" signature="8401:8491" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
+                <marker date="1450994440000" expanded="true" signature="9196:9559" placeholder="SELECT c.nam... bayesdb_column" />
+                <marker date="1450994440000" expanded="true" signature="9799:9943" placeholder="SELECT missi... missing_value" />
+                <marker date="1450994440000" expanded="true" signature="10411:10492" placeholder="SELECT model... bayesdb_crosscat_theta" />
+                <marker date="1450994440000" expanded="true" signature="11032:11132" placeholder="SELECT theta... bayesdb_crosscat_theta" />
+                <marker date="1450994440000" expanded="true" signature="13111:13251" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
+                <marker date="1450994440000" expanded="true" signature="14060:14120" placeholder="SELECT missi... missing_value" />
+                <marker date="1450994440000" expanded="true" signature="15125:15225" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
+                <marker date="1450994440000" expanded="true" signature="18305:18357" placeholder="SELECT versi... bayesdb_metamodel" />
+                <marker date="1450994440000" expanded="true" signature="19323:19415" placeholder="SELECT gener... bayesdb_crosscat_theta" />
+                <marker date="1450994440000" expanded="true" signature="19489:19657" placeholder="UPDATE bayes... " />
+                <marker date="1450994440000" expanded="true" signature="20733:20977" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
+                <marker date="1450994440000" expanded="true" signature="20858:20976" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
+                <marker date="1450994440000" expanded="true" signature="21110:21203" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
+                <marker date="1450994440000" expanded="true" signature="21471:21639" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+                <marker date="1450994440000" expanded="true" signature="26338:26352" placeholder="SELECT * FRO... missing_value" />
+                <marker date="1450994440000" expanded="true" signature="27005:27126" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
+                <marker date="1450994440000" expanded="true" signature="27666:27836" placeholder="INSERT INTO bayesdb_crosscat_column... " />
+                <marker date="1450994440000" expanded="true" signature="27906:28076" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
+                <marker date="1450994440000" expanded="true" signature="29347:29368" placeholder="SELECT COUNT... missing_value" />
+                <marker date="1450994440000" expanded="true" signature="29458:29501" placeholder="SELECT _rowi... " />
+                <marker date="1450994440000" expanded="true" signature="30166:30209" placeholder="SELECT _rowi... " />
+                <marker date="1450994440000" expanded="true" signature="30294:30426" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+                <marker date="1450994440000" expanded="true" signature="30784:30932" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
+                <marker date="1450994440000" expanded="true" signature="32649:32732" placeholder="DELETE FROM " />
+                <marker date="1450994440000" expanded="true" signature="32881:32970" placeholder="DELETE FROM " />
+                <marker date="1450994440000" expanded="true" signature="33114:33191" placeholder="DELETE FROM " />
+                <marker date="1450994440000" expanded="true" signature="33327:33408" placeholder="DELETE FROM " />
+                <marker date="1450994440000" expanded="true" signature="33545:33631" placeholder="DELETE FROM " />
+                <marker date="1450994440000" expanded="true" signature="33765:33843" placeholder="DELETE FROM " />
+                <marker date="1450994440000" expanded="true" signature="33978:34058" placeholder="DELETE FROM " />
+                <marker date="1450994440000" expanded="true" signature="34657:34775" placeholder="UPDATE bayes... " />
+                <marker date="1450994440000" expanded="true" signature="36970:37118" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
+                <marker date="1450994440000" expanded="true" signature="38229:38286" placeholder="DELETE FROM " />
+                <marker date="1450994440000" expanded="true" signature="38353:38416" placeholder="DELETE FROM " />
+                <marker date="1450994440000" expanded="true" signature="38623:38716" placeholder="DELETE FROM " />
+                <marker date="1450994440000" expanded="true" signature="38783:38882" placeholder="DELETE FROM " />
+                <marker date="1450994440000" expanded="true" signature="39844:40006" placeholder="UPDATE bayes... " />
+                <marker date="1450994440000" expanded="true" signature="40067:40199" placeholder="UPDATE bayes... " />
+                <marker date="1450994440000" expanded="true" signature="40261:40561" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+                <marker date="1450994440000" expanded="true" signature="45160:45366" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
+                <marker date="1450994440000" expanded="true" signature="53229:53260" placeholder="INSERT INTO missing_value... " />
+                <marker date="1450994440000" expanded="true" signature="54691:55026" placeholder="SELECT m.mod... bayesdb_generator_model" />
+                <marker date="1450994440000" expanded="true" signature="55719:55855" placeholder="UPDATE bayes... " />
+                <marker date="1450994440000" expanded="true" signature="57644:57701" placeholder="SELECT DISTI... missing_value" />
+                <marker date="1450994440000" expanded="true" signature="59952:60045" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
+                <marker date="1450994440000" expanded="true" signature="60614:60707" placeholder="SELECT colno... bayesdb_crosscat_column" />
+                <marker date="1450994440000" expanded="true" signature="61310:61429" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/setup.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/metamodels/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.097510375">
-              <caret line="204" column="15" selection-start-line="204" selection-start-column="15" selection-end-line="204" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,20 +136,49 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2962962">
-              <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="122" column="92" selection-start-line="122" selection-start-column="92" selection-end-line="122" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read_csv.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/read_csv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#2415#2452#0" expanded="true" />
+                <marker date="1450375596000" expanded="true" signature="3678:3697" placeholder="CREATE TABLE... missing_value" />
+                <marker date="1450375596000" expanded="true" signature="4748:4779" placeholder="INSERT INTO missing_value... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiprocessingEngine.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/virtualenvs/edison/lib/python3.5/site-packages/crosscat/MultiprocessingEngine.py">
+      <file leaf-file-name="core.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+              <folding>
+                <marker date="1450375596000" expanded="true" signature="3049:3129" placeholder="SELECT name bayesdb_column" />
+                <marker date="1450375596000" expanded="true" signature="3683:3749" placeholder="SELECT COUNT... bayesdb_column" />
+                <marker date="1450375596000" expanded="true" signature="4238:4301" placeholder="SELECT name bayesdb_column" />
+                <marker date="1450375596000" expanded="true" signature="4977:5040" placeholder="SELECT colno... bayesdb_column" />
+                <marker date="1450375596000" expanded="true" signature="8630:8682" placeholder="SELECT metam... bayesdb_generator" />
+                <marker date="1450375596000" expanded="true" signature="10617:10827" placeholder="SELECT COUNT... bayesdb_generator" />
+                <marker date="1450375596000" expanded="true" signature="12086:12425" placeholder="SELECT c.nam... bayesdb_generator" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/schema.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,9 +195,9 @@
         <option value="$PROJECT_DIR$/build/lib/bayeslite/parse.py" />
         <option value="$PROJECT_DIR$/src/parse.py" />
         <option value="$PROJECT_DIR$/src/bayesdb.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/src/__init__.py" />
         <option value="$PROJECT_DIR$/src/metamodels/crosscat.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
@@ -176,10 +207,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1033" />
-    <option name="y" value="448" />
-    <option name="width" value="1440" />
-    <option name="height" value="827" />
+    <option name="y" value="23" />
+    <option name="width" value="1298" />
+    <option name="height" value="770" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -207,6 +237,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,41 +256,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bayeslite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bayeslite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bayeslite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bayeslite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metamodels" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -496,27 +494,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1033" y="448" width="1440" height="827" extended-state="0" />
+    <frame x="0" y="23" width="1298" height="770" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25277779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2539809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32717678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33038348" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -537,432 +533,50 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+    <entry file="file://$PROJECT_DIR$/src/core.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metamodels/nig_normal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="243" column="8" selection-start-line="243" selection-start-column="8" selection-end-line="243" selection-end-column="8" />
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
-            <marker date="1450375596000" expanded="true" signature="1156:1226" placeholder="INSERT INTO ..." />
-            <marker date="1450375596000" expanded="true" signature="1229:1612" placeholder="CREATE TABLE..bayesdb_nig_normal_column..." />
-            <marker date="1450375596000" expanded="true" signature="1615:2129" placeholder="CREATE TABLE..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="2748:2800" placeholder="SELECT versi..bayesdb_metamodel..." />
-            <marker date="1450375596000" expanded="true" signature="3704:3867" placeholder="INSERT INTO ..." />
-            <marker date="1450375596000" expanded="true" signature="4794:4874" placeholder="DELETE FROM ..." />
-            <marker date="1450375596000" expanded="true" signature="5077:5241" placeholder="INSERT INTO ..." />
-            <marker date="1450375596000" expanded="true" signature="5512:5595" placeholder="DELETE FROM ..." />
-            <marker date="1450375596000" expanded="true" signature="5762:5861" placeholder="DELETE FROM ..." />
-            <marker date="1450375596000" expanded="true" signature="6607:6800" placeholder="UPDATE bayes..." />
-            <marker date="1450375596000" expanded="true" signature="7199:7300" placeholder="SELECT colno..bayesdb_nig_normal_column..." />
-            <marker date="1450375596000" expanded="true" signature="7993:8085" placeholder="SELECT DISTI..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="9467:9575" placeholder="SELECT colno..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="10586:10699" placeholder="SELECT colno..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="11782:11980" placeholder="UPDATE bayes..." />
-            <marker date="1450375596000" expanded="true" signature="12397:12595" placeholder="UPDATE bayes..." />
-            <marker date="1450375596000" expanded="true" signature="13916:13931" placeholder="SELECT missi..missing_value..." />
+            <marker date="1450375596000" expanded="true" signature="3049:3129" placeholder="SELECT name bayesdb_column" />
+            <marker date="1450375596000" expanded="true" signature="3683:3749" placeholder="SELECT COUNT... bayesdb_column" />
+            <marker date="1450375596000" expanded="true" signature="4238:4301" placeholder="SELECT name bayesdb_column" />
+            <marker date="1450375596000" expanded="true" signature="4977:5040" placeholder="SELECT colno... bayesdb_column" />
+            <marker date="1450375596000" expanded="true" signature="8630:8682" placeholder="SELECT metam... bayesdb_generator" />
+            <marker date="1450375596000" expanded="true" signature="10617:10827" placeholder="SELECT COUNT... bayesdb_generator" />
+            <marker date="1450375596000" expanded="true" signature="12086:12425" placeholder="SELECT c.nam... bayesdb_generator" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/metamodel.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="185" column="8" selection-start-line="185" selection-start-column="8" selection-end-line="185" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metamodels/crosscat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1189" column="8" selection-start-line="1189" selection-start-column="8" selection-end-line="1189" selection-end-column="8" />
-          <folding>
-            <marker date="1450886625000" expanded="true" signature="1421:1489" placeholder="INSERT INTO bayesdb_metamodel... " />
-            <marker date="1450886625000" expanded="true" signature="1492:1691" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
-            <marker date="1450886625000" expanded="true" signature="1694:1917" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
-            <marker date="1450886625000" expanded="true" signature="1920:2072" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
-            <marker date="1450886625000" expanded="true" signature="2075:2461" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
-            <marker date="1450886625000" expanded="true" signature="2464:2852" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
-            <marker date="1450886625000" expanded="true" signature="2855:3147" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="3181:3245" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="3248:3746" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450886625000" expanded="true" signature="3780:3844" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="3847:3975" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
-            <marker date="1450886625000" expanded="true" signature="4022:4589" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="4623:4687" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="4690:5260" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
-            <marker date="1450886625000" expanded="true" signature="5262:5350" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450886625000" expanded="true" signature="5310:5350" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="5352:5389" placeholder="DROP TABLE b... " />
-            <marker date="1450886625000" expanded="true" signature="5391:5475" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450886625000" expanded="true" signature="5478:5516" placeholder="DROP TABLE b... " />
-            <marker date="1450886625000" expanded="true" signature="5550:5614" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="5770:5858" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
-            <marker date="1450886625000" expanded="true" signature="5860:6336" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450886625000" expanded="true" signature="6338:6430" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450886625000" expanded="true" signature="6383:6430" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
-            <marker date="1450886625000" expanded="true" signature="6432:6476" placeholder="DROP TABLE b... " />
-            <marker date="1450886625000" expanded="true" signature="6510:6574" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="6577:7083" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
-            <marker date="1450886625000" expanded="true" signature="8394:8484" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
-            <marker date="1450886625000" expanded="true" signature="9189:9552" placeholder="SELECT c.nam... bayesdb_column" />
-            <marker date="1450886625000" expanded="true" signature="9792:9936" placeholder="SELECT missi... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="10404:10485" placeholder="SELECT model... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="11025:11125" placeholder="SELECT theta... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="13104:13244" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="14053:14113" placeholder="SELECT missi... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="15118:15218" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="18298:18350" placeholder="SELECT versi... bayesdb_metamodel" />
-            <marker date="1450886625000" expanded="true" signature="19316:19408" placeholder="SELECT gener... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="19482:19650" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="20726:20970" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
-            <marker date="1450886625000" expanded="true" signature="20851:20969" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
-            <marker date="1450886625000" expanded="true" signature="21103:21196" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
-            <marker date="1450886625000" expanded="true" signature="21464:21632" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450886625000" expanded="true" signature="26331:26345" placeholder="SELECT * FRO... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="26998:27119" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
-            <marker date="1450886625000" expanded="true" signature="27659:27829" placeholder="INSERT INTO bayesdb_crosscat_column... " />
-            <marker date="1450886625000" expanded="true" signature="27899:28069" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
-            <marker date="1450886625000" expanded="true" signature="29340:29361" placeholder="SELECT COUNT... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="29451:29494" placeholder="SELECT _rowi... " />
-            <marker date="1450886625000" expanded="true" signature="30159:30202" placeholder="SELECT _rowi... " />
-            <marker date="1450886625000" expanded="true" signature="30287:30419" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450886625000" expanded="true" signature="30777:30925" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
-            <marker date="1450886625000" expanded="true" signature="32642:32725" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="32874:32963" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33107:33184" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33320:33401" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33538:33624" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33758:33836" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33971:34051" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="34650:34768" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="36963:37111" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
-            <marker date="1450886625000" expanded="true" signature="38222:38279" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="38346:38409" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="38616:38709" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="38776:38875" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="39837:39999" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="40060:40192" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="40254:40554" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450886625000" expanded="true" signature="45112:45318" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
-            <marker date="1450886625000" expanded="true" signature="53181:53212" placeholder="INSERT INTO missing_value... " />
-            <marker date="1450886625000" expanded="true" signature="54643:54978" placeholder="SELECT m.mod... bayesdb_generator_model" />
-            <marker date="1450886625000" expanded="true" signature="55671:55807" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="57596:57653" placeholder="SELECT DISTI... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="59904:59997" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
-            <marker date="1450886625000" expanded="true" signature="60566:60659" placeholder="SELECT colno... bayesdb_crosscat_column" />
-            <marker date="1450886625000" expanded="true" signature="61262:61381" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/bql.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="235" column="24" selection-start-line="235" selection-start-column="2" selection-end-line="235" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bqlfn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="191" column="40" selection-start-line="191" selection-start-column="40" selection-end-line="191" selection-end-column="40" />
-          <folding>
-            <marker date="1450375596000" expanded="true" signature="2465:2526" placeholder="SELECT missi..missing_value..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/src/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metamodels/nig_normal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="243" column="8" selection-start-line="243" selection-start-column="8" selection-end-line="243" selection-end-column="8" />
-          <folding>
-            <marker date="1450375596000" expanded="true" signature="1156:1226" placeholder="INSERT INTO ..." />
-            <marker date="1450375596000" expanded="true" signature="1229:1612" placeholder="CREATE TABLE..bayesdb_nig_normal_column..." />
-            <marker date="1450375596000" expanded="true" signature="1615:2129" placeholder="CREATE TABLE..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="2748:2800" placeholder="SELECT versi..bayesdb_metamodel..." />
-            <marker date="1450375596000" expanded="true" signature="3704:3867" placeholder="INSERT INTO ..." />
-            <marker date="1450375596000" expanded="true" signature="4794:4874" placeholder="DELETE FROM ..." />
-            <marker date="1450375596000" expanded="true" signature="5077:5241" placeholder="INSERT INTO ..." />
-            <marker date="1450375596000" expanded="true" signature="5512:5595" placeholder="DELETE FROM ..." />
-            <marker date="1450375596000" expanded="true" signature="5762:5861" placeholder="DELETE FROM ..." />
-            <marker date="1450375596000" expanded="true" signature="6607:6800" placeholder="UPDATE bayes..." />
-            <marker date="1450375596000" expanded="true" signature="7199:7300" placeholder="SELECT colno..bayesdb_nig_normal_column..." />
-            <marker date="1450375596000" expanded="true" signature="7993:8085" placeholder="SELECT DISTI..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="9467:9575" placeholder="SELECT colno..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="10586:10699" placeholder="SELECT colno..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="11782:11980" placeholder="UPDATE bayes..." />
-            <marker date="1450375596000" expanded="true" signature="12397:12595" placeholder="UPDATE bayes..." />
-            <marker date="1450375596000" expanded="true" signature="13916:13931" placeholder="SELECT missi..missing_value..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metamodel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="185" column="8" selection-start-line="185" selection-start-column="8" selection-end-line="185" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metamodels/crosscat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1189" column="8" selection-start-line="1189" selection-start-column="8" selection-end-line="1189" selection-end-column="8" />
-          <folding>
-            <marker date="1450886625000" expanded="true" signature="1421:1489" placeholder="INSERT INTO bayesdb_metamodel... " />
-            <marker date="1450886625000" expanded="true" signature="1492:1691" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
-            <marker date="1450886625000" expanded="true" signature="1694:1917" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
-            <marker date="1450886625000" expanded="true" signature="1920:2072" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
-            <marker date="1450886625000" expanded="true" signature="2075:2461" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
-            <marker date="1450886625000" expanded="true" signature="2464:2852" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
-            <marker date="1450886625000" expanded="true" signature="2855:3147" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="3181:3245" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="3248:3746" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450886625000" expanded="true" signature="3780:3844" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="3847:3975" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
-            <marker date="1450886625000" expanded="true" signature="4022:4589" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="4623:4687" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="4690:5260" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
-            <marker date="1450886625000" expanded="true" signature="5262:5350" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450886625000" expanded="true" signature="5310:5350" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="5352:5389" placeholder="DROP TABLE b... " />
-            <marker date="1450886625000" expanded="true" signature="5391:5475" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450886625000" expanded="true" signature="5478:5516" placeholder="DROP TABLE b... " />
-            <marker date="1450886625000" expanded="true" signature="5550:5614" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="5770:5858" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
-            <marker date="1450886625000" expanded="true" signature="5860:6336" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450886625000" expanded="true" signature="6338:6430" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450886625000" expanded="true" signature="6383:6430" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
-            <marker date="1450886625000" expanded="true" signature="6432:6476" placeholder="DROP TABLE b... " />
-            <marker date="1450886625000" expanded="true" signature="6510:6574" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="6577:7083" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
-            <marker date="1450886625000" expanded="true" signature="8394:8484" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
-            <marker date="1450886625000" expanded="true" signature="9189:9552" placeholder="SELECT c.nam... bayesdb_column" />
-            <marker date="1450886625000" expanded="true" signature="9792:9936" placeholder="SELECT missi... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="10404:10485" placeholder="SELECT model... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="11025:11125" placeholder="SELECT theta... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="13104:13244" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="14053:14113" placeholder="SELECT missi... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="15118:15218" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="18298:18350" placeholder="SELECT versi... bayesdb_metamodel" />
-            <marker date="1450886625000" expanded="true" signature="19316:19408" placeholder="SELECT gener... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="19482:19650" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="20726:20970" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
-            <marker date="1450886625000" expanded="true" signature="20851:20969" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
-            <marker date="1450886625000" expanded="true" signature="21103:21196" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
-            <marker date="1450886625000" expanded="true" signature="21464:21632" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450886625000" expanded="true" signature="26331:26345" placeholder="SELECT * FRO... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="26998:27119" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
-            <marker date="1450886625000" expanded="true" signature="27659:27829" placeholder="INSERT INTO bayesdb_crosscat_column... " />
-            <marker date="1450886625000" expanded="true" signature="27899:28069" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
-            <marker date="1450886625000" expanded="true" signature="29340:29361" placeholder="SELECT COUNT... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="29451:29494" placeholder="SELECT _rowi... " />
-            <marker date="1450886625000" expanded="true" signature="30159:30202" placeholder="SELECT _rowi... " />
-            <marker date="1450886625000" expanded="true" signature="30287:30419" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450886625000" expanded="true" signature="30777:30925" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
-            <marker date="1450886625000" expanded="true" signature="32642:32725" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="32874:32963" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33107:33184" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33320:33401" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33538:33624" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33758:33836" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33971:34051" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="34650:34768" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="36963:37111" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
-            <marker date="1450886625000" expanded="true" signature="38222:38279" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="38346:38409" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="38616:38709" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="38776:38875" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="39837:39999" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="40060:40192" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="40254:40554" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450886625000" expanded="true" signature="45112:45318" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
-            <marker date="1450886625000" expanded="true" signature="53181:53212" placeholder="INSERT INTO missing_value... " />
-            <marker date="1450886625000" expanded="true" signature="54643:54978" placeholder="SELECT m.mod... bayesdb_generator_model" />
-            <marker date="1450886625000" expanded="true" signature="55671:55807" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="57596:57653" placeholder="SELECT DISTI... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="59904:59997" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
-            <marker date="1450886625000" expanded="true" signature="60566:60659" placeholder="SELECT colno... bayesdb_crosscat_column" />
-            <marker date="1450886625000" expanded="true" signature="61262:61381" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/bql.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="235" column="24" selection-start-line="235" selection-start-column="2" selection-end-line="235" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bqlfn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.17523365">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1450375596000" expanded="true" signature="2465:2526" placeholder="SELECT missi..missing_value..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metamodels/nig_normal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="243" column="8" selection-start-line="243" selection-start-column="8" selection-end-line="243" selection-end-column="8" />
-          <folding>
-            <marker date="1450375596000" expanded="true" signature="1156:1226" placeholder="INSERT INTO ..." />
-            <marker date="1450375596000" expanded="true" signature="1229:1612" placeholder="CREATE TABLE..bayesdb_nig_normal_column..." />
-            <marker date="1450375596000" expanded="true" signature="1615:2129" placeholder="CREATE TABLE..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="2748:2800" placeholder="SELECT versi..bayesdb_metamodel..." />
-            <marker date="1450375596000" expanded="true" signature="3704:3867" placeholder="INSERT INTO ..." />
-            <marker date="1450375596000" expanded="true" signature="4794:4874" placeholder="DELETE FROM ..." />
-            <marker date="1450375596000" expanded="true" signature="5077:5241" placeholder="INSERT INTO ..." />
-            <marker date="1450375596000" expanded="true" signature="5512:5595" placeholder="DELETE FROM ..." />
-            <marker date="1450375596000" expanded="true" signature="5762:5861" placeholder="DELETE FROM ..." />
-            <marker date="1450375596000" expanded="true" signature="6607:6800" placeholder="UPDATE bayes..." />
-            <marker date="1450375596000" expanded="true" signature="7199:7300" placeholder="SELECT colno..bayesdb_nig_normal_column..." />
-            <marker date="1450375596000" expanded="true" signature="7993:8085" placeholder="SELECT DISTI..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="9467:9575" placeholder="SELECT colno..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="10586:10699" placeholder="SELECT colno..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="11782:11980" placeholder="UPDATE bayes..." />
-            <marker date="1450375596000" expanded="true" signature="12397:12595" placeholder="UPDATE bayes..." />
-            <marker date="1450375596000" expanded="true" signature="13916:13931" placeholder="SELECT missi..missing_value..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metamodel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="185" column="8" selection-start-line="185" selection-start-column="8" selection-end-line="185" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metamodels/crosscat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1189" column="8" selection-start-line="1189" selection-start-column="8" selection-end-line="1189" selection-end-column="8" />
-          <folding>
-            <marker date="1450886625000" expanded="true" signature="1421:1489" placeholder="INSERT INTO bayesdb_metamodel... " />
-            <marker date="1450886625000" expanded="true" signature="1492:1691" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
-            <marker date="1450886625000" expanded="true" signature="1694:1917" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
-            <marker date="1450886625000" expanded="true" signature="1920:2072" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
-            <marker date="1450886625000" expanded="true" signature="2075:2461" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
-            <marker date="1450886625000" expanded="true" signature="2464:2852" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
-            <marker date="1450886625000" expanded="true" signature="2855:3147" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="3181:3245" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="3248:3746" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450886625000" expanded="true" signature="3780:3844" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="3847:3975" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
-            <marker date="1450886625000" expanded="true" signature="4022:4589" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="4623:4687" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="4690:5260" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
-            <marker date="1450886625000" expanded="true" signature="5262:5350" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450886625000" expanded="true" signature="5310:5350" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="5352:5389" placeholder="DROP TABLE b... " />
-            <marker date="1450886625000" expanded="true" signature="5391:5475" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450886625000" expanded="true" signature="5478:5516" placeholder="DROP TABLE b... " />
-            <marker date="1450886625000" expanded="true" signature="5550:5614" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="5770:5858" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
-            <marker date="1450886625000" expanded="true" signature="5860:6336" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450886625000" expanded="true" signature="6338:6430" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450886625000" expanded="true" signature="6383:6430" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
-            <marker date="1450886625000" expanded="true" signature="6432:6476" placeholder="DROP TABLE b... " />
-            <marker date="1450886625000" expanded="true" signature="6510:6574" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="6577:7083" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
-            <marker date="1450886625000" expanded="true" signature="8394:8484" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
-            <marker date="1450886625000" expanded="true" signature="9189:9552" placeholder="SELECT c.nam... bayesdb_column" />
-            <marker date="1450886625000" expanded="true" signature="9792:9936" placeholder="SELECT missi... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="10404:10485" placeholder="SELECT model... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="11025:11125" placeholder="SELECT theta... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="13104:13244" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="14053:14113" placeholder="SELECT missi... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="15118:15218" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="18298:18350" placeholder="SELECT versi... bayesdb_metamodel" />
-            <marker date="1450886625000" expanded="true" signature="19316:19408" placeholder="SELECT gener... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="19482:19650" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="20726:20970" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
-            <marker date="1450886625000" expanded="true" signature="20851:20969" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
-            <marker date="1450886625000" expanded="true" signature="21103:21196" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
-            <marker date="1450886625000" expanded="true" signature="21464:21632" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450886625000" expanded="true" signature="26331:26345" placeholder="SELECT * FRO... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="26998:27119" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
-            <marker date="1450886625000" expanded="true" signature="27659:27829" placeholder="INSERT INTO bayesdb_crosscat_column... " />
-            <marker date="1450886625000" expanded="true" signature="27899:28069" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
-            <marker date="1450886625000" expanded="true" signature="29340:29361" placeholder="SELECT COUNT... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="29451:29494" placeholder="SELECT _rowi... " />
-            <marker date="1450886625000" expanded="true" signature="30159:30202" placeholder="SELECT _rowi... " />
-            <marker date="1450886625000" expanded="true" signature="30287:30419" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450886625000" expanded="true" signature="30777:30925" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
-            <marker date="1450886625000" expanded="true" signature="32642:32725" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="32874:32963" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33107:33184" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33320:33401" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33538:33624" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33758:33836" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33971:34051" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="34650:34768" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="36963:37111" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
-            <marker date="1450886625000" expanded="true" signature="38222:38279" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="38346:38409" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="38616:38709" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="38776:38875" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="39837:39999" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="40060:40192" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="40254:40554" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450886625000" expanded="true" signature="45112:45318" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
-            <marker date="1450886625000" expanded="true" signature="53181:53212" placeholder="INSERT INTO missing_value... " />
-            <marker date="1450886625000" expanded="true" signature="54643:54978" placeholder="SELECT m.mod... bayesdb_generator_model" />
-            <marker date="1450886625000" expanded="true" signature="55671:55807" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="57596:57653" placeholder="SELECT DISTI... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="59904:59997" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
-            <marker date="1450886625000" expanded="true" signature="60566:60659" placeholder="SELECT colno... bayesdb_crosscat_column" />
-            <marker date="1450886625000" expanded="true" signature="61262:61381" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
+            <marker date="1450375596000" expanded="true" signature="3792:3825" placeholder="CREATE TABLE... t" />
+            <marker date="1450375596000" expanded="true" signature="3849:3890" placeholder="INSERT INTO t... " />
+            <marker date="1450375596000" expanded="true" signature="3914:3947" placeholder="CREATE TABLE... u" />
+            <marker date="1450375596000" expanded="true" signature="6734:6759" placeholder="SELECT MAX(_... " />
+            <marker date="1450375596000" expanded="true" signature="7162:7182" placeholder="create table... t" />
+            <marker date="1450375596000" expanded="true" signature="7333:7353" placeholder="create table... t" />
+            <marker date="1450375596000" expanded="true" signature="7509:7529" placeholder="create table... t" />
+            <marker date="1450375596000" expanded="true" signature="7683:7703" placeholder="create table... t" />
+            <marker date="1450375596000" expanded="true" signature="7807:7827" placeholder="create table... t" />
+            <marker date="1450375596000" expanded="true" signature="7927:7947" placeholder="create table... t" />
+            <marker date="1450375596000" expanded="true" signature="8045:8065" placeholder="CREATE TABLE... T" />
+            <marker date="1450375596000" expanded="true" signature="8133:8184" placeholder="create table... t0" />
+            <marker date="1450375596000" expanded="true" signature="8281:8317" placeholder="insert into t0... " />
+            <marker date="1450375596000" expanded="true" signature="8720:8857" placeholder="create table... t1" />
+            <marker date="1450375596000" expanded="true" signature="8934:8982" placeholder="insert into t1... " />
+            <marker date="1450375596000" expanded="true" signature="10837:10854" placeholder="select id fr... t1" />
+            <marker date="1450375596000" expanded="true" signature="10889:10906" placeholder="select ID fr... T1" />
+            <marker date="1450375596000" expanded="true" signature="10941:10958" placeholder="select iD fr... T1" />
+            <marker date="1450375596000" expanded="true" signature="10993:11010" placeholder="select Id fr... T1" />
+            <marker date="1450375596000" expanded="true" signature="17392:17492" placeholder="select bql_c... " />
+            <marker date="1450375596000" expanded="true" signature="17457:17490" placeholder="select missi... missing_value" />
+            <marker date="1450375596000" expanded="true" signature="20204:20239" placeholder="SELECT missi... missing_value" />
+            <marker date="1450375596000" expanded="true" signature="22429:22467" placeholder="SELECT age F... t1" />
           </folding>
         </state>
       </provider>
@@ -970,342 +584,128 @@
     <entry file="file://$PROJECT_DIR$/src/read_csv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/src/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="662" column="55" selection-start-line="662" selection-start-column="55" selection-end-line="662" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/src/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="593" column="70" selection-start-line="593" selection-start-column="70" selection-end-line="593" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/analysis.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HACKING">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/read_pandas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="25.88">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/read_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/analysis.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/src/hook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8287841">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/src/pretty.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3771712">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/src/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="662" column="55" selection-start-line="662" selection-start-column="55" selection-end-line="662" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/src/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="30" column="54" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/bayeslite.1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="66.36667">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/bql.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="235" column="24" selection-start-line="235" selection-start-column="2" selection-end-line="235" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metamodel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.80137">
-          <caret line="185" column="8" selection-start-line="185" selection-start-column="8" selection-end-line="185" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metamodels/nig_normal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.849315">
-          <caret line="243" column="8" selection-start-line="243" selection-start-column="8" selection-end-line="243" selection-end-column="8" />
           <folding>
-            <marker date="1450375596000" expanded="true" signature="1156:1226" placeholder="INSERT INTO ..." />
-            <marker date="1450375596000" expanded="true" signature="1229:1612" placeholder="CREATE TABLE..bayesdb_nig_normal_column..." />
-            <marker date="1450375596000" expanded="true" signature="1615:2129" placeholder="CREATE TABLE..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="2748:2800" placeholder="SELECT versi..bayesdb_metamodel..." />
-            <marker date="1450375596000" expanded="true" signature="3704:3867" placeholder="INSERT INTO ..." />
-            <marker date="1450375596000" expanded="true" signature="4794:4874" placeholder="DELETE FROM ..." />
-            <marker date="1450375596000" expanded="true" signature="5077:5241" placeholder="INSERT INTO ..." />
-            <marker date="1450375596000" expanded="true" signature="5512:5595" placeholder="DELETE FROM ..." />
-            <marker date="1450375596000" expanded="true" signature="5762:5861" placeholder="DELETE FROM ..." />
-            <marker date="1450375596000" expanded="true" signature="6607:6800" placeholder="UPDATE bayes..." />
-            <marker date="1450375596000" expanded="true" signature="7199:7300" placeholder="SELECT colno..bayesdb_nig_normal_column..." />
-            <marker date="1450375596000" expanded="true" signature="7993:8085" placeholder="SELECT DISTI..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="9467:9575" placeholder="SELECT colno..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="10586:10699" placeholder="SELECT colno..bayesdb_nig_normal_model..." />
-            <marker date="1450375596000" expanded="true" signature="11782:11980" placeholder="UPDATE bayes..." />
-            <marker date="1450375596000" expanded="true" signature="12397:12595" placeholder="UPDATE bayes..." />
-            <marker date="1450375596000" expanded="true" signature="13916:13931" placeholder="SELECT missi..missing_value..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bqlfn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="191" column="40" selection-start-line="191" selection-start-column="40" selection-end-line="191" selection-end-column="40" />
-          <folding>
-            <marker date="1450375596000" expanded="true" signature="2465:2526" placeholder="SELECT missi..missing_value..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/src/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93835616">
-          <caret line="613" column="0" selection-start-line="611" selection-start-column="0" selection-end-line="613" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/virtualenvs/edison/lib/python3.5/site-packages/crosscat/LocalEngine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39419088">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2962962">
-          <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
-          <folding>
-            <element signature="e#2415#2452#0" expanded="true" />
+            <marker date="1450375596000" expanded="true" signature="3678:3697" placeholder="CREATE TABLE... missing_value" />
+            <marker date="1450375596000" expanded="true" signature="4748:4779" placeholder="INSERT INTO missing_value... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bayesdb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-253.33333">
-          <caret line="473" column="5" selection-start-line="473" selection-start-column="5" selection-end-line="473" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/virtualenvs/edison/lib/python3.5/site-packages/crosscat/MultiprocessingEngine.py">
+    <entry file="file://$PROJECT_DIR$/src/schema.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metamodels/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="122" column="92" selection-start-line="122" selection-start-column="92" selection-end-line="122" selection-end-column="92" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/metamodels/crosscat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4461153">
+          <caret line="290" column="38" selection-start-line="290" selection-start-column="38" selection-end-line="290" selection-end-column="38" />
           <folding>
-            <marker date="1450886625000" expanded="true" signature="1421:1489" placeholder="INSERT INTO bayesdb_metamodel... " />
-            <marker date="1450886625000" expanded="true" signature="1492:1691" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
-            <marker date="1450886625000" expanded="true" signature="1694:1917" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
-            <marker date="1450886625000" expanded="true" signature="1920:2072" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
-            <marker date="1450886625000" expanded="true" signature="2075:2461" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
-            <marker date="1450886625000" expanded="true" signature="2464:2852" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
-            <marker date="1450886625000" expanded="true" signature="2855:3147" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="3181:3245" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="3248:3746" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450886625000" expanded="true" signature="3780:3844" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="3847:3975" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
-            <marker date="1450886625000" expanded="true" signature="4022:4589" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="4623:4687" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="4690:5260" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
-            <marker date="1450886625000" expanded="true" signature="5262:5350" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450886625000" expanded="true" signature="5310:5350" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="5352:5389" placeholder="DROP TABLE b... " />
-            <marker date="1450886625000" expanded="true" signature="5391:5475" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
-            <marker date="1450886625000" expanded="true" signature="5478:5516" placeholder="DROP TABLE b... " />
-            <marker date="1450886625000" expanded="true" signature="5550:5614" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="5770:5858" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
-            <marker date="1450886625000" expanded="true" signature="5860:6336" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
-            <marker date="1450886625000" expanded="true" signature="6338:6430" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450886625000" expanded="true" signature="6383:6430" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
-            <marker date="1450886625000" expanded="true" signature="6432:6476" placeholder="DROP TABLE b... " />
-            <marker date="1450886625000" expanded="true" signature="6510:6574" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="6577:7083" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
-            <marker date="1450886625000" expanded="true" signature="8394:8484" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
-            <marker date="1450886625000" expanded="true" signature="9189:9552" placeholder="SELECT c.nam... bayesdb_column" />
-            <marker date="1450886625000" expanded="true" signature="9792:9936" placeholder="SELECT missi... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="10404:10485" placeholder="SELECT model... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="11025:11125" placeholder="SELECT theta... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="13104:13244" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="14053:14113" placeholder="SELECT missi... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="15118:15218" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
-            <marker date="1450886625000" expanded="true" signature="18298:18350" placeholder="SELECT versi... bayesdb_metamodel" />
-            <marker date="1450886625000" expanded="true" signature="19316:19408" placeholder="SELECT gener... bayesdb_crosscat_theta" />
-            <marker date="1450886625000" expanded="true" signature="19482:19650" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="20726:20970" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
-            <marker date="1450886625000" expanded="true" signature="20851:20969" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
-            <marker date="1450886625000" expanded="true" signature="21103:21196" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
-            <marker date="1450886625000" expanded="true" signature="21464:21632" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450886625000" expanded="true" signature="26331:26345" placeholder="SELECT * FRO... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="26998:27119" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
-            <marker date="1450886625000" expanded="true" signature="27659:27829" placeholder="INSERT INTO bayesdb_crosscat_column... " />
-            <marker date="1450886625000" expanded="true" signature="27899:28069" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
-            <marker date="1450886625000" expanded="true" signature="29340:29361" placeholder="SELECT COUNT... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="29451:29494" placeholder="SELECT _rowi... " />
-            <marker date="1450886625000" expanded="true" signature="30159:30202" placeholder="SELECT _rowi... " />
-            <marker date="1450886625000" expanded="true" signature="30287:30419" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
-            <marker date="1450886625000" expanded="true" signature="30777:30925" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
-            <marker date="1450886625000" expanded="true" signature="32642:32725" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="32874:32963" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33107:33184" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33320:33401" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33538:33624" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33758:33836" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="33971:34051" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="34650:34768" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="36963:37111" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
-            <marker date="1450886625000" expanded="true" signature="38222:38279" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="38346:38409" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="38616:38709" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="38776:38875" placeholder="DELETE FROM " />
-            <marker date="1450886625000" expanded="true" signature="39837:39999" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="40060:40192" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="40254:40554" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
-            <marker date="1450886625000" expanded="true" signature="45112:45318" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
-            <marker date="1450886625000" expanded="true" signature="53181:53212" placeholder="INSERT INTO missing_value... " />
-            <marker date="1450886625000" expanded="true" signature="54643:54978" placeholder="SELECT m.mod... bayesdb_generator_model" />
-            <marker date="1450886625000" expanded="true" signature="55671:55807" placeholder="UPDATE bayes... " />
-            <marker date="1450886625000" expanded="true" signature="57596:57653" placeholder="SELECT DISTI... missing_value" />
-            <marker date="1450886625000" expanded="true" signature="59904:59997" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
-            <marker date="1450886625000" expanded="true" signature="60566:60659" placeholder="SELECT colno... bayesdb_crosscat_column" />
-            <marker date="1450886625000" expanded="true" signature="61262:61381" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
+            <element signature="e#914#925#0" expanded="true" />
+            <marker date="1450994440000" expanded="true" signature="1428:1496" placeholder="INSERT INTO bayesdb_metamodel... " />
+            <marker date="1450994440000" expanded="true" signature="1499:1698" placeholder="CREATE TABLE... bayesdb_crosscat_disttype" />
+            <marker date="1450994440000" expanded="true" signature="1701:1924" placeholder="INSERT INTO bayesdb_crosscat_disttype... " />
+            <marker date="1450994440000" expanded="true" signature="1927:2079" placeholder="CREATE TABLE... bayesdb_crosscat_metadata" />
+            <marker date="1450994440000" expanded="true" signature="2082:2468" placeholder="CREATE TABLE... bayesdb_crosscat_column" />
+            <marker date="1450994440000" expanded="true" signature="2471:2859" placeholder="CREATE TABLE... bayesdb_crosscat_column_codemap" />
+            <marker date="1450994440000" expanded="true" signature="2862:3154" placeholder="CREATE TABLE... bayesdb_crosscat_theta" />
+            <marker date="1450994440000" expanded="true" signature="3188:3252" placeholder="UPDATE bayes... " />
+            <marker date="1450994440000" expanded="true" signature="3255:3753" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+            <marker date="1450994440000" expanded="true" signature="3787:3851" placeholder="UPDATE bayes... " />
+            <marker date="1450994440000" expanded="true" signature="3854:3982" placeholder="CREATE TABLE... bayesdb_crosscat_subsampled" />
+            <marker date="1450994440000" expanded="true" signature="4029:4596" placeholder="CREATE TABLE... bayesdb_crosscat_subsample" />
+            <marker date="1450994440000" expanded="true" signature="4630:4694" placeholder="UPDATE bayes... " />
+            <marker date="1450994440000" expanded="true" signature="4697:5267" placeholder="CREATE TABLE... bayesdb_crosscat_subsample_temp" />
+            <marker date="1450994440000" expanded="true" signature="5269:5357" placeholder="INSERT INTO bayesdb_crosscat_subsample_temp... " />
+            <marker date="1450994440000" expanded="true" signature="5317:5357" placeholder="SELECT * FRO... bayesdb_crosscat_subsample" />
+            <marker date="1450994440000" expanded="true" signature="5359:5396" placeholder="DROP TABLE b... " />
+            <marker date="1450994440000" expanded="true" signature="5398:5482" placeholder="ALTER TABLE bayesdb_crosscat_subsample_temp... " />
+            <marker date="1450994440000" expanded="true" signature="5485:5523" placeholder="DROP TABLE b... " />
+            <marker date="1450994440000" expanded="true" signature="5557:5621" placeholder="UPDATE bayes... " />
+            <marker date="1450994440000" expanded="true" signature="5777:5865" placeholder="ALTER TABLE bayesdb_crosscat_diagnostics... " />
+            <marker date="1450994440000" expanded="true" signature="5867:6343" placeholder="CREATE TABLE... bayesdb_crosscat_diagnostics" />
+            <marker date="1450994440000" expanded="true" signature="6345:6437" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+            <marker date="1450994440000" expanded="true" signature="6390:6437" placeholder="SELECT * FRO... bayesdb_crosscat_diagnostics_temp" />
+            <marker date="1450994440000" expanded="true" signature="6439:6483" placeholder="DROP TABLE b... " />
+            <marker date="1450994440000" expanded="true" signature="6517:6581" placeholder="UPDATE bayes... " />
+            <marker date="1450994440000" expanded="true" signature="6584:7090" placeholder="CREATE TABLE... bayesdb_crosscat_column_dependency" />
+            <marker date="1450994440000" expanded="true" signature="8401:8491" placeholder="SELECT metad... bayesdb_crosscat_metadata" />
+            <marker date="1450994440000" expanded="true" signature="9196:9559" placeholder="SELECT c.nam... bayesdb_column" />
+            <marker date="1450994440000" expanded="true" signature="9799:9943" placeholder="SELECT missi... missing_value" />
+            <marker date="1450994440000" expanded="true" signature="10411:10492" placeholder="SELECT model... bayesdb_crosscat_theta" />
+            <marker date="1450994440000" expanded="true" signature="11032:11132" placeholder="SELECT theta... bayesdb_crosscat_theta" />
+            <marker date="1450994440000" expanded="true" signature="13111:13251" placeholder="SELECT sql_r... bayesdb_crosscat_subsample" />
+            <marker date="1450994440000" expanded="true" signature="14060:14120" placeholder="SELECT missi... missing_value" />
+            <marker date="1450994440000" expanded="true" signature="15125:15225" placeholder="SELECT MAX(c... bayesdb_crosscat_subsample" />
+            <marker date="1450994440000" expanded="true" signature="18305:18357" placeholder="SELECT versi... bayesdb_metamodel" />
+            <marker date="1450994440000" expanded="true" signature="19323:19415" placeholder="SELECT gener... bayesdb_crosscat_theta" />
+            <marker date="1450994440000" expanded="true" signature="19489:19657" placeholder="UPDATE bayes... " />
+            <marker date="1450994440000" expanded="true" signature="20733:20977" placeholder="SELECT gener... bayesdb_crosscat_metadata" />
+            <marker date="1450994440000" expanded="true" signature="20858:20976" placeholder="SELECT * FRO... bayesdb_crosscat_subsampled" />
+            <marker date="1450994440000" expanded="true" signature="21110:21203" placeholder="INSERT INTO bayesdb_crosscat_subsampled... " />
+            <marker date="1450994440000" expanded="true" signature="21471:21639" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+            <marker date="1450994440000" expanded="true" signature="26338:26352" placeholder="SELECT * FRO... missing_value" />
+            <marker date="1450994440000" expanded="true" signature="27005:27126" placeholder="INSERT INTO bayesdb_crosscat_metadata... " />
+            <marker date="1450994440000" expanded="true" signature="27666:27836" placeholder="INSERT INTO bayesdb_crosscat_column... " />
+            <marker date="1450994440000" expanded="true" signature="27906:28076" placeholder="INSERT INTO bayesdb_crosscat_column_codemap... " />
+            <marker date="1450994440000" expanded="true" signature="29347:29368" placeholder="SELECT COUNT... missing_value" />
+            <marker date="1450994440000" expanded="true" signature="29458:29501" placeholder="SELECT _rowi... " />
+            <marker date="1450994440000" expanded="true" signature="30166:30209" placeholder="SELECT _rowi... " />
+            <marker date="1450994440000" expanded="true" signature="30294:30426" placeholder="INSERT INTO bayesdb_crosscat_subsample... " />
+            <marker date="1450994440000" expanded="true" signature="30784:30932" placeholder="INSERT INTO bayesdb_crosscat_column_dependency... " />
+            <marker date="1450994440000" expanded="true" signature="32649:32732" placeholder="DELETE FROM " />
+            <marker date="1450994440000" expanded="true" signature="32881:32970" placeholder="DELETE FROM " />
+            <marker date="1450994440000" expanded="true" signature="33114:33191" placeholder="DELETE FROM " />
+            <marker date="1450994440000" expanded="true" signature="33327:33408" placeholder="DELETE FROM " />
+            <marker date="1450994440000" expanded="true" signature="33545:33631" placeholder="DELETE FROM " />
+            <marker date="1450994440000" expanded="true" signature="33765:33843" placeholder="DELETE FROM " />
+            <marker date="1450994440000" expanded="true" signature="33978:34058" placeholder="DELETE FROM " />
+            <marker date="1450994440000" expanded="true" signature="34657:34775" placeholder="UPDATE bayes... " />
+            <marker date="1450994440000" expanded="true" signature="36970:37118" placeholder="INSERT INTO bayesdb_crosscat_theta... " />
+            <marker date="1450994440000" expanded="true" signature="38229:38286" placeholder="DELETE FROM " />
+            <marker date="1450994440000" expanded="true" signature="38353:38416" placeholder="DELETE FROM " />
+            <marker date="1450994440000" expanded="true" signature="38623:38716" placeholder="DELETE FROM " />
+            <marker date="1450994440000" expanded="true" signature="38783:38882" placeholder="DELETE FROM " />
+            <marker date="1450994440000" expanded="true" signature="39844:40006" placeholder="UPDATE bayes... " />
+            <marker date="1450994440000" expanded="true" signature="40067:40199" placeholder="UPDATE bayes... " />
+            <marker date="1450994440000" expanded="true" signature="40261:40561" placeholder="INSERT INTO bayesdb_crosscat_diagnostics... " />
+            <marker date="1450994440000" expanded="true" signature="45160:45366" placeholder="SELECT 1 + M... bayesdb_crosscat_diagnostics" />
+            <marker date="1450994440000" expanded="true" signature="53229:53260" placeholder="INSERT INTO missing_value... " />
+            <marker date="1450994440000" expanded="true" signature="54691:55026" placeholder="SELECT m.mod... bayesdb_generator_model" />
+            <marker date="1450994440000" expanded="true" signature="55719:55855" placeholder="UPDATE bayes... " />
+            <marker date="1450994440000" expanded="true" signature="57644:57701" placeholder="SELECT DISTI... missing_value" />
+            <marker date="1450994440000" expanded="true" signature="59952:60045" placeholder="SELECT cc_co... bayesdb_crosscat_column" />
+            <marker date="1450994440000" expanded="true" signature="60614:60707" placeholder="SELECT colno... bayesdb_crosscat_column" />
+            <marker date="1450994440000" expanded="true" signature="61310:61429" placeholder="SELECT colno... bayesdb_crosscat_column_dependency" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.097510375">
-          <caret line="204" column="15" selection-start-line="204" selection-start-column="15" selection-end-line="204" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -18,7 +18,7 @@
 
 import StringIO
 
-import bayeslite.ast as ast
+import bayeslite.bayeslite_ast as ast2
 import bayeslite.grammar as grammar
 import bayeslite.scan as scan
 
@@ -68,7 +68,7 @@ def parse_bql_phrases(scanner):
             if 0 < scanner.n_numpar:
                 n_numpar = scanner.n_numpar
                 nampar_map = scanner.nampar_map
-                yield ast.Parametrized(phrase, n_numpar, nampar_map)
+                yield ast2.Parametrized(phrase, n_numpar, nampar_map)
             else:
                 yield phrase
         if token[0] == 0:       # EOF
@@ -170,42 +170,42 @@ class BQLSemantics(object):
     def p_phrase_query(self, q):                return q
 
     # Transactions
-    def p_command_begin(self):                  return ast.Begin()
-    def p_command_rollback(self):               return ast.Rollback()
-    def p_command_commit(self):                 return ast.Commit()
+    def p_command_begin(self):                  return ast2.Begin()
+    def p_command_rollback(self):               return ast2.Rollback()
+    def p_command_commit(self):                 return ast2.Commit()
 
     # SQL Data Definition Language subset
     def p_command_createtab_as(self, temp, ifnotexists, name, query):
-        if isinstance(query, ast.Simulate):
-            return ast.CreateTabSim(temp, ifnotexists, name, query)
+        if isinstance(query, ast2.Simulate):
+            return ast2.CreateTabSim(temp, ifnotexists, name, query)
         else:
-            return ast.CreateTabAs(temp, ifnotexists, name, query)
+            return ast2.CreateTabAs(temp, ifnotexists, name, query)
     def p_command_droptab(self, ifexists, name):
-        return ast.DropTab(ifexists, name)
+        return ast2.DropTab(ifexists, name)
     def p_command_altertab(self, table, cmds):
-        return ast.AlterTab(table, cmds)
+        return ast2.AlterTab(table, cmds)
 
     def p_altertab_cmds_one(self, cmd):         return [cmd]
     def p_altertab_cmds_many(self, cmds, cmd):  cmds.append(cmd); return cmds
     def p_altertab_cmd_renametab(self, name):
-        return ast.AlterTabRenameTab(name)
+        return ast2.AlterTabRenameTab(name)
     def p_altertab_cmd_renamecol(self, old, new):
-        return ast.AlterTabRenameCol(old, new)
+        return ast2.AlterTabRenameCol(old, new)
     def p_altertab_cmd_setdefgen(self, generator):
-        return ast.AlterTabSetDefGen(generator)
+        return ast2.AlterTabSetDefGen(generator)
     def p_altertab_cmd_unsetdefgen(self):
-        return ast.AlterTabUnsetDefGen()
+        return ast2.AlterTabUnsetDefGen()
 
     # BQL Model Definition Language
     def p_command_creategen(self, defaultp, name, ifnotexists, table,
             metamodel, schema):
         self._ensure_wizard_mode(name)
-        return ast.CreateGen(defaultp, name, ifnotexists, table,
+        return ast2.CreateGen(defaultp, name, ifnotexists, table,
             metamodel, schema)
     def p_command_dropgen(self, ifexists, name):
-        return ast.DropGen(ifexists, name)
+        return ast2.DropGen(ifexists, name)
     def p_command_altergen(self, generator, cmds):
-        return ast.AlterGen(generator, cmds)
+        return ast2.AlterGen(generator, cmds)
 
     def p_default_opt_none(self):               return False
     def p_default_opt_some(self):               return True
@@ -213,7 +213,7 @@ class BQLSemantics(object):
     def p_altergen_cmds_one(self, cmd):         return [cmd]
     def p_altergen_cmds_many(self, cmds, cmd):  cmds.append(cmd); return cmds
     def p_altergen_cmd_renamegen(self, name):
-        return ast.AlterGenRenameGen(name)
+        return ast2.AlterGenRenameGen(name)
 
     def p_generator_schema_one(self, s):        return [s]
     def p_generator_schema_many(self, ss, s):   ss.append(s); return ss
@@ -229,7 +229,7 @@ class BQLSemantics(object):
     def p_command_init_models(self, n, ifnotexists, generator):
         # XXX model config
         self._ensure_wizard_mode(n)
-        return ast.InitModels(ifnotexists, generator, n, config=None)
+        return ast2.InitModels(ifnotexists, generator, n, config=None)
     def p_command_analyze_models(self, generator, models, anlimit, anckpt,
             wait):
         self._ensure_wizard_mode(generator)
@@ -240,10 +240,10 @@ class BQLSemantics(object):
         if anckpt is not None:
             ckpt_iterations = anckpt[1] if anckpt[0] == 'iterations' else None
             ckpt_seconds = anckpt[1] if anckpt[0] == 'seconds' else None
-        return ast.AnalyzeModels(generator, models, iterations, seconds,
+        return ast2.AnalyzeModels(generator, models, iterations, seconds,
             ckpt_iterations, ckpt_seconds, wait)
     def p_command_drop_models(self, models, generator):
-        return ast.DropModels(generator, models)
+        return ast2.DropModels(generator, models)
 
     def p_temp_opt_none(self):                  return False
     def p_temp_opt_some(self):                  return True
@@ -273,11 +273,11 @@ class BQLSemantics(object):
     def p_wait_opt_some(self):                  return True
 
     def p_simulate_s(self, cols, generator, modelno, constraints, lim):
-        return ast.Simulate(cols, generator, modelno, constraints, lim.limit)
+        return ast2.Simulate(cols, generator, modelno, constraints, lim.limit)
     def p_simulate_nolimit(self, cols, generator, modelno, constraints):
         # XXX Report source location.
         self.errors.append('simulate missing limit')
-        return ast.Simulate(cols, generator, modelno, constraints, 0)
+        return ast2.Simulate(cols, generator, modelno, constraints, 0)
     def p_simulate_columns_one(self, col):
         return [col]
     def p_simulate_columns_many(self, cols, col):
@@ -303,7 +303,7 @@ class BQLSemantics(object):
     def p_query_create_column_list(self, q):    return q
 
     def p_select_s(self, quant, cols, tabs, cond, grouping, ord, lim):
-        return ast.Select(quant, cols, tabs, cond, grouping, ord, lim)
+        return ast2.Select(quant, cols, tabs, cond, grouping, ord, lim)
 
     def p_estimate_e(self, quant, cols, tabs, modelno, cond, grouping,
             ord, lim):
@@ -321,30 +321,30 @@ class BQLSemantics(object):
             ": use `ESTIMATE ... FROM PAIRWISE COLUMNS OF'")
 
     def p_estby_e(self, quant, cols, generator, modelno):
-        return ast.EstBy(quant, cols, generator, modelno)
+        return ast2.EstBy(quant, cols, generator, modelno)
 
     def p_infer_auto(self, cols, conf, generator, modelno, cond, grouping,
             ord, lim):
-        return ast.InferAuto(cols, conf, generator, modelno, cond, grouping,
+        return ast2.InferAuto(cols, conf, generator, modelno, cond, grouping,
             ord, lim)
     def p_infer_explicit(self, cols, generator, modelno, cond, grouping,
             ord, lim):
-        return ast.InferExplicit(cols, generator, modelno, cond, grouping,
+        return ast2.InferExplicit(cols, generator, modelno, cond, grouping,
             ord, lim)
 
     def p_infer_auto_columns_one(self, c):      return [c]
     def p_infer_auto_columns_many(self, cs, c): cs.append(c); return cs
 
     def p_infer_auto_column_all(self):
-        return ast.InfColAll()
+        return ast2.InfColAll()
     def p_infer_auto_column_one(self, col, name):
-        return ast.InfColOne(col, name)
+        return ast2.InfColOne(col, name)
 
     def p_conf_opt_none(self):                  return None
     def p_conf_opt_some(self, conf):            return conf
 
     def p_withconf_opt_none(self):
-        return ast.ExpLit(ast.LitInt(0))
+        return ast2.ExpLit(ast2.LitInt(0))
     def p_withconf_opt_some(self, conf):        return conf
     def p_withconf_conf(self, conf):            return conf
 
@@ -352,19 +352,19 @@ class BQLSemantics(object):
     def p_infer_exp_columns_many(self, cs, c):  cs.append(c); return cs
     def p_infer_exp_column_sel(self, c):        return c
     def p_infer_exp_column_pred(self, col, name, confname):
-        return ast.PredCol(col, name, confname)
+        return ast2.PredCol(col, name, confname)
 
-    def p_select_quant_distinct(self):          return ast.SELQUANT_DISTINCT
-    def p_select_quant_all(self):               return ast.SELQUANT_ALL
-    def p_select_quant_default(self):           return ast.SELQUANT_ALL
+    def p_select_quant_distinct(self):          return ast2.SELQUANT_DISTINCT
+    def p_select_quant_all(self):               return ast2.SELQUANT_ALL
+    def p_select_quant_default(self):           return ast2.SELQUANT_ALL
 
     def p_select_columns_one(self, c):          return [c]
     def p_select_columns_many(self, cs, c):     cs.append(c); return cs
 
-    def p_select_column_star(self):             return ast.SelColAll(None)
-    def p_select_column_qstar(self, table):     return ast.SelColAll(table)
-    def p_select_column_qsub(self, table, q):   return ast.SelColSub(table, q)
-    def p_select_column_exp(self, e, name):     return ast.SelColExp(e, name)
+    def p_select_column_star(self):             return ast2.SelColAll(None)
+    def p_select_column_qstar(self, table):     return ast2.SelColAll(table)
+    def p_select_column_qsub(self, table, q):   return ast2.SelColSub(table, q)
+    def p_select_column_exp(self, e, name):     return ast2.SelColExp(e, name)
 
     def p_as_none(self):                        return None
     def p_as_some(self, name):                  return name
@@ -374,32 +374,32 @@ class BQLSemantics(object):
 
     def p_from_est_row(self, name):
         def c(quant, cols, modelno, cond, grouping, ord, lim):
-            return ast.Estimate(quant, cols, name, modelno, cond, grouping,
+            return ast2.Estimate(quant, cols, name, modelno, cond, grouping,
                 ord, lim)
         return c
     def p_from_est_pairrow(self, name):
         def c(quant, cols, modelno, cond, grouping, ord, lim):
-            return ast.EstPairRow(cols, name, modelno, cond, ord, lim)
+            return ast2.EstPairRow(cols, name, modelno, cond, ord, lim)
         return c
     def p_from_est_col(self, name):
         def c(quant, cols, modelno, cond, grouping, ord, lim):
-            return ast.EstCols(cols, name, modelno, cond, ord, lim)
+            return ast2.EstCols(cols, name, modelno, cond, ord, lim)
         return c
     def p_from_est_paircol(self, name, subcols):
         def c(quant, cols, modelno, cond, grouping, ord, lim):
-            return ast.EstPairCols(cols, name, subcols, modelno, cond, ord,
+            return ast2.EstPairCols(cols, name, subcols, modelno, cond, ord,
                 lim)
         return c
 
     def p_usingmodel_opt_all(self):
-        return ast.ExpLit(ast.LitNull(None))
+        return ast2.ExpLit(ast2.LitNull(None))
     def p_usingmodel_opt_one(self, modelno):
         return modelno
 
     def p_select_tables_one(self, t):           return [t]
     def p_select_tables_many(self, ts, t):      ts.append(t); return ts
-    def p_select_table_named(self, table, name): return ast.SelTab(table, name)
-    def p_select_table_subquery(self, q, name):  return ast.SelTab(q, name)
+    def p_select_table_named(self, table, name): return ast2.SelTab(table, name)
+    def p_select_table_subquery(self, q, name):  return ast2.SelTab(q, name)
 
     def p_for_none(self):                       return None
     def p_for_one(self, collist):               return collist
@@ -413,24 +413,24 @@ class BQLSemantics(object):
     def p_table_name_unqualified(self, name):   return name
 
     def p_group_by_none(self):                  return None
-    def p_group_by_some(self, keys):            return ast.Grouping(keys, None)
-    def p_group_by_having(self, keys, cond):    return ast.Grouping(keys, cond)
+    def p_group_by_some(self, keys):            return ast2.Grouping(keys, None)
+    def p_group_by_having(self, keys, cond):    return ast2.Grouping(keys, cond)
 
     def p_order_by_none(self):                  return None
     def p_order_by_some(self, keys):            return keys
     def p_order_keys_one(self, key):            return [key]
     def p_order_keys_many(self, keys, key):     keys.append(key); return keys
-    def p_order_key_k(self, e, s):              return ast.Ord(e, s)
-    def p_order_sense_none(self):               return ast.ORD_ASC
-    def p_order_sense_asc(self):                return ast.ORD_ASC
-    def p_order_sense_desc(self):               return ast.ORD_DESC
+    def p_order_key_k(self, e, s):              return ast2.Ord(e, s)
+    def p_order_sense_none(self):               return ast2.ORD_ASC
+    def p_order_sense_asc(self):                return ast2.ORD_ASC
+    def p_order_sense_desc(self):               return ast2.ORD_DESC
 
     def p_limit_opt_none(self):                 return None
     def p_limit_opt_some(self, lim):            return lim
 
-    def p_limit_n(self, limit):                 return ast.Lim(limit, None)
-    def p_limit_offset(self, limit, offset):    return ast.Lim(limit, offset)
-    def p_limit_comma(self, offset, limit):     return ast.Lim(limit, offset)
+    def p_limit_n(self, limit):                 return ast2.Lim(limit, None)
+    def p_limit_offset(self, limit, offset):    return ast2.Lim(limit, offset)
+    def p_limit_comma(self, offset, limit):     return ast2.Lim(limit, offset)
 
     def p_expressions_opt_none(self):           return []
     def p_expressions_opt_some(self, es):       return es
@@ -442,112 +442,112 @@ class BQLSemantics(object):
     def p_bqlfn0_exp(self, e):          return e
     def p_expression1_top(self, e):     return e
 
-    def p_boolean_or_or(self, l, r):    return ast.op(ast.OP_BOOLOR, l, r)
+    def p_boolean_or_or(self, l, r):    return ast2.op(ast2.OP_BOOLOR, l, r)
     def p_boolean_or_and(self, a):      return a
-    def p_boolean_and_and(self, l, r):  return ast.op(ast.OP_BOOLAND, l, r)
+    def p_boolean_and_and(self, l, r):  return ast2.op(ast2.OP_BOOLAND, l, r)
     def p_boolean_and_not(self, n):     return n
-    def p_boolean_not_not(self, n):     return ast.op(ast.OP_BOOLNOT, n)
+    def p_boolean_not_not(self, n):     return ast2.op(ast2.OP_BOOLNOT, n)
     def p_boolean_not_equality(self, c):
                                         return c
-    def p_equality_is(self, l, r):      return ast.op(ast.OP_IS, l, r)
-    def p_equality_isnot(self, l, r):   return ast.op(ast.OP_ISNOT, l, r)
-    def p_equality_like(self, l, r):    return ast.op(ast.OP_LIKE, l, r)
-    def p_equality_notlike(self, l, r): return ast.op(ast.OP_NOTLIKE, l, r)
+    def p_equality_is(self, l, r):      return ast2.op(ast2.OP_IS, l, r)
+    def p_equality_isnot(self, l, r):   return ast2.op(ast2.OP_ISNOT, l, r)
+    def p_equality_like(self, l, r):    return ast2.op(ast2.OP_LIKE, l, r)
+    def p_equality_notlike(self, l, r): return ast2.op(ast2.OP_NOTLIKE, l, r)
     def p_equality_like_esc(self, l, r, e):
-                                        return ast.op(ast.OP_LIKE_ESC, l, r, e)
+                                        return ast2.op(ast2.OP_LIKE_ESC, l, r, e)
     def p_equality_notlike_esc(self, l, r, e):
-                                        return ast.op(ast.OP_NOTLIKE_ESC,
+                                        return ast2.op(ast2.OP_NOTLIKE_ESC,
                                             l, r, e)
-    def p_equality_glob(self, l, r):    return ast.op(ast.OP_GLOB, l, r)
-    def p_equality_notglob(self, l, r): return ast.op(ast.OP_NOTGLOB, l, r)
+    def p_equality_glob(self, l, r):    return ast2.op(ast2.OP_GLOB, l, r)
+    def p_equality_notglob(self, l, r): return ast2.op(ast2.OP_NOTGLOB, l, r)
     def p_equality_glob_esc(self, l, r, e):
-                                        return ast.op(ast.OP_GLOB_ESC, l, r, e)
+                                        return ast2.op(ast2.OP_GLOB_ESC, l, r, e)
     def p_equality_notglob_esc(self, l, r, e):
-                                        return ast.op(ast.OP_NOTGLOB_ESC,
+                                        return ast2.op(ast2.OP_NOTGLOB_ESC,
                                             l, r, e)
-    def p_equality_regexp(self, l, r):  return ast.op(ast.OP_REGEXP, l, r)
+    def p_equality_regexp(self, l, r):  return ast2.op(ast2.OP_REGEXP, l, r)
     def p_equality_notregexp(self, l, r):
-                                        return ast.op(ast.OP_NOTREGEXP, l, r)
+                                        return ast2.op(ast2.OP_NOTREGEXP, l, r)
     def p_equality_regexp_esc(self, l, r, e):
-                                        return ast.op(ast.OP_REGEXP_ESC,
+                                        return ast2.op(ast2.OP_REGEXP_ESC,
                                             l, r, e)
     def p_equality_notregexp_esc(self, l, r, e):
-                                        return ast.op(ast.OP_NOTREGEXP_ESC,
+                                        return ast2.op(ast2.OP_NOTREGEXP_ESC,
                                             l, r, e)
-    def p_equality_match(self, l, r):   return ast.op(ast.OP_MATCH, l, r)
+    def p_equality_match(self, l, r):   return ast2.op(ast2.OP_MATCH, l, r)
     def p_equality_notmatch(self, l, r):
-                                        return ast.op(ast.OP_NOTMATCH, l, r)
+                                        return ast2.op(ast2.OP_NOTMATCH, l, r)
     def p_equality_match_esc(self, l, r, e):
-                                        return ast.op(ast.OP_MATCH_ESC, l, r, e)
+                                        return ast2.op(ast2.OP_MATCH_ESC, l, r, e)
     def p_equality_notmatch_esc(self, l, r, e):
-                                        return ast.op(ast.OP_NOTMATCH_ESC,
+                                        return ast2.op(ast2.OP_NOTMATCH_ESC,
                                             l, r, e)
     def p_equality_between(self, m, l, r):
-                                        return ast.op(ast.OP_BETWEEN, m, l, r)
+                                        return ast2.op(ast2.OP_BETWEEN, m, l, r)
     def p_equality_notbetween(self, m, l, r):
-                                        return ast.op(ast.OP_NOTBETWEEN, m,l,r)
-    def p_equality_in(self, e, q):      return ast.ExpIn(e, True, q)
-    def p_equality_notin(self, e, q):   return ast.ExpIn(e, False, q)
-    def p_equality_isnull(self, e):     return ast.op(ast.OP_ISNULL, e)
-    def p_equality_notnull(self, e):    return ast.op(ast.OP_NOTNULL, e)
-    def p_equality_neq(self, l, r):     return ast.op(ast.OP_NEQ, l, r)
-    def p_equality_eq(self, l, r):      return ast.op(ast.OP_EQ, l, r)
+                                        return ast2.op(ast2.OP_NOTBETWEEN, m,l,r)
+    def p_equality_in(self, e, q):      return ast2.ExpIn(e, True, q)
+    def p_equality_notin(self, e, q):   return ast2.ExpIn(e, False, q)
+    def p_equality_isnull(self, e):     return ast2.op(ast2.OP_ISNULL, e)
+    def p_equality_notnull(self, e):    return ast2.op(ast2.OP_NOTNULL, e)
+    def p_equality_neq(self, l, r):     return ast2.op(ast2.OP_NEQ, l, r)
+    def p_equality_eq(self, l, r):      return ast2.op(ast2.OP_EQ, l, r)
     def p_equality_ordering(self, o):   return o
-    def p_ordering_lt(self, l, r):      return ast.op(ast.OP_LT, l, r)
-    def p_ordering_leq(self, l, r):     return ast.op(ast.OP_LEQ, l, r)
-    def p_ordering_geq(self, l, r):     return ast.op(ast.OP_GEQ, l, r)
-    def p_ordering_gt(self, l, r):      return ast.op(ast.OP_GT, l, r)
+    def p_ordering_lt(self, l, r):      return ast2.op(ast2.OP_LT, l, r)
+    def p_ordering_leq(self, l, r):     return ast2.op(ast2.OP_LEQ, l, r)
+    def p_ordering_geq(self, l, r):     return ast2.op(ast2.OP_GEQ, l, r)
+    def p_ordering_gt(self, l, r):      return ast2.op(ast2.OP_GT, l, r)
     def p_ordering_bitwise(self, b):    return b
-    def p_bitwise_and(self, l, r):      return ast.op(ast.OP_BITAND, l, r)
-    def p_bitwise_ior(self, l, r):      return ast.op(ast.OP_BITIOR, l, r)
-    def p_bitwise_lshift(self, l, r):   return ast.op(ast.OP_LSHIFT, l, r)
-    def p_bitwise_rshift(self, l, r):   return ast.op(ast.OP_RSHIFT, l, r)
+    def p_bitwise_and(self, l, r):      return ast2.op(ast2.OP_BITAND, l, r)
+    def p_bitwise_ior(self, l, r):      return ast2.op(ast2.OP_BITIOR, l, r)
+    def p_bitwise_lshift(self, l, r):   return ast2.op(ast2.OP_LSHIFT, l, r)
+    def p_bitwise_rshift(self, l, r):   return ast2.op(ast2.OP_RSHIFT, l, r)
     def p_bitwise_additive(self, a):    return a
-    def p_additive_add(self, l, r):     return ast.op(ast.OP_ADD, l, r)
-    def p_additive_sub(self, l, r):     return ast.op(ast.OP_SUB, l, r)
+    def p_additive_add(self, l, r):     return ast2.op(ast2.OP_ADD, l, r)
+    def p_additive_sub(self, l, r):     return ast2.op(ast2.OP_SUB, l, r)
     def p_additive_mult(self, m):       return m
     def p_multiplicative_mul(self, l, r):
-                                        return ast.op(ast.OP_MUL, l, r)
+                                        return ast2.op(ast2.OP_MUL, l, r)
     def p_multiplicative_div(self, l, r):
-                                        return ast.op(ast.OP_DIV, l, r)
+                                        return ast2.op(ast2.OP_DIV, l, r)
     def p_multiplicative_rem(self, l, r):
-                                        return ast.op(ast.OP_REM, l, r)
+                                        return ast2.op(ast2.OP_REM, l, r)
     def p_multiplicative_conc(self, c): return c
     def p_concatenative_concat(self, l, r):
-                                        return ast.op(ast.OP_CONCAT, l, r)
+                                        return ast2.op(ast2.OP_CONCAT, l, r)
     def p_concatenative_collate(self, c):
                                         return c
     def p_collating_collate(self, e, c):
-                                        return ast.ExpCollate(e, c)
+                                        return ast2.ExpCollate(e, c)
     def p_collating_unary(self, u):     return u
-    def p_unary_bitwise_not(self, u):   return ast.op(ast.OP_BITNOT, u)
-    def p_unary_minus(self, u):         return ast.op(ast.OP_NEGATE, u)
-    def p_unary_plus(self, u):          return ast.op(ast.OP_PLUSID, u)
+    def p_unary_bitwise_not(self, u):   return ast2.op(ast2.OP_BITNOT, u)
+    def p_unary_minus(self, u):         return ast2.op(ast2.OP_NEGATE, u)
+    def p_unary_plus(self, u):          return ast2.op(ast2.OP_PLUSID, u)
     def p_unary_bql(self, b):           return b
 
-    def p_bqlfn_predprob_row(self, col):        return ast.ExpBQLPredProb(col)
-    def p_bqlfn_prob_const(self, col, e):       return ast.ExpBQLProb(col, e,
+    def p_bqlfn_predprob_row(self, col):        return ast2.ExpBQLPredProb(col)
+    def p_bqlfn_prob_const(self, col, e):       return ast2.ExpBQLProb(col, e,
                                                     [])
     def p_bqlfn_condprob_const(self, col, e, constraints):
-                                                return ast.ExpBQLProb(col, e,
+                                                return ast2.ExpBQLProb(col, e,
                                                     constraints)
-    def p_bqlfn_prob_1col(self, e):             return ast.ExpBQLProb(None, e,
+    def p_bqlfn_prob_1col(self, e):             return ast2.ExpBQLProb(None, e,
                                                     [])
     def p_bqlfn_condprob_1col(self, e, constraints):
-                                                return ast.ExpBQLProb(None, e,
+                                                return ast2.ExpBQLProb(None, e,
                                                     constraints)
-    def p_bqlfn_sim_1row(self, cond, cols):     return ast.ExpBQLSim(cond,cols)
-    def p_bqlfn_sim_2row(self, cols):           return ast.ExpBQLSim(None,cols)
-    def p_bqlfn_depprob(self, cols):            return ast.ExpBQLDepProb(*cols)
+    def p_bqlfn_sim_1row(self, cond, cols):     return ast2.ExpBQLSim(cond,cols)
+    def p_bqlfn_sim_2row(self, cols):           return ast2.ExpBQLSim(None,cols)
+    def p_bqlfn_depprob(self, cols):            return ast2.ExpBQLDepProb(*cols)
     def p_bqlfn_mutinf(self, cols, nsamp):
-        return ast.ExpBQLMutInf(cols[0], cols[1], nsamp)
-    def p_bqlfn_correl(self, cols):             return ast.ExpBQLCorrel(*cols)
-    def p_bqlfn_correl_pval(self, cols):        return ast.ExpBQLCorrelPval(*cols)
-    def p_bqlfn_predict(self, col, conf):       return ast.ExpBQLPredict(col,
+        return ast2.ExpBQLMutInf(cols[0], cols[1], nsamp)
+    def p_bqlfn_correl(self, cols):             return ast2.ExpBQLCorrel(*cols)
+    def p_bqlfn_correl_pval(self, cols):        return ast2.ExpBQLCorrelPval(*cols)
+    def p_bqlfn_predict(self, col, conf):       return ast2.ExpBQLPredict(col,
                                                     conf)
     def p_bqlfn_primary(self, p):               return p
 
-    def p_wrt_none(self):                       return [ast.ColListAll()]
+    def p_wrt_none(self):                       return [ast2.ColListAll()]
     def p_wrt_one(self, collist):               return [collist]
     def p_wrt_some(self, collists):             return collists
 
@@ -564,23 +564,23 @@ class BQLSemantics(object):
         collists.append(collist)
         return collists
 
-    def p_column_list_all(self):                return ast.ColListAll()
-    def p_column_list_column(self, col):        return ast.ColListLit([col])
-    def p_column_list_subquery(self, q):        return ast.ColListSub(q)
+    def p_column_list_all(self):                return ast2.ColListAll()
+    def p_column_list_column(self, col):        return ast2.ColListLit([col])
+    def p_column_list_subquery(self, q):        return ast2.ColListSub(q)
 
-    def p_primary_literal(self, v):             return ast.ExpLit(v)
-    def p_primary_numpar(self, n):              return ast.ExpNumpar(n)
-    def p_primary_nampar(self, n):              return ast.ExpNampar(n[0],n[1])
-    def p_primary_apply(self, fn, es):          return ast.ExpApp(False,fn,es)
-    def p_primary_apply_distinct(self, fn, es): return ast.ExpApp(True, fn, es)
-    def p_primary_apply_star(self, fn):         return ast.ExpAppStar(fn)
+    def p_primary_literal(self, v):             return ast2.ExpLit(v)
+    def p_primary_numpar(self, n):              return ast2.ExpNumpar(n)
+    def p_primary_nampar(self, n):              return ast2.ExpNampar(n[0],n[1])
+    def p_primary_apply(self, fn, es):          return ast2.ExpApp(False,fn,es)
+    def p_primary_apply_distinct(self, fn, es): return ast2.ExpApp(True, fn, es)
+    def p_primary_apply_star(self, fn):         return ast2.ExpAppStar(fn)
     def p_primary_paren(self, e):               return e
-    def p_primary_subquery(self, q):            return ast.ExpSub(q)
-    def p_primary_cast(self, e, t):             return ast.ExpCast(e, t)
-    def p_primary_exists(self, q):              return ast.ExpExists(q)
-    def p_primary_column(self, col):            return ast.ExpCol(None, col)
-    def p_primary_tabcol(self, tab, col):       return ast.ExpCol(tab, col)
-    def p_primary_case(self, k, ws, e):         return ast.ExpCase(k, ws, e)
+    def p_primary_subquery(self, q):            return ast2.ExpSub(q)
+    def p_primary_cast(self, e, t):             return ast2.ExpCast(e, t)
+    def p_primary_exists(self, q):              return ast2.ExpExists(q)
+    def p_primary_column(self, col):            return ast2.ExpCol(None, col)
+    def p_primary_tabcol(self, tab, col):       return ast2.ExpCol(tab, col)
+    def p_primary_case(self, k, ws, e):         return ast2.ExpCase(k, ws, e)
 
     def p_case_key_opt_none(self):              return None
     def p_case_key_opt_some(self, k):           return k
@@ -589,14 +589,14 @@ class BQLSemantics(object):
     def p_case_else_opt_none(self):             return None
     def p_case_else_opt_some(self, e):          return e
 
-    def p_literal_null(self):                   return ast.LitNull(None)
-    def p_literal_integer(self, i):             return ast.LitInt(i)
-    def p_literal_float(self, f):               return ast.LitFloat(f)
-    def p_literal_string(self, s):              return ast.LitString(s)
+    def p_literal_null(self):                   return ast2.LitNull(None)
+    def p_literal_integer(self, i):             return ast2.LitInt(i)
+    def p_literal_float(self, f):               return ast2.LitFloat(f)
+    def p_literal_string(self, s):              return ast2.LitString(s)
 
-    def p_type_name(self, n):                   return ast.Type(n, [])
-    def p_type_onearg(self, n, a):              return ast.Type(n, [a])
-    def p_type_twoarg(self, n, a, b):           return ast.Type(n, [a, b])
+    def p_type_name(self, n):                   return ast2.Type(n, [])
+    def p_type_onearg(self, n, a):              return ast2.Type(n, [a])
+    def p_type_twoarg(self, n, a, b):           return ast2.Type(n, [a, b])
     def p_typename_one(self, n):                return [n]
     def p_typename_many(self, tn, n):           tn.append(n); return tn
     def p_typearg_unsigned(self, i):            return i
