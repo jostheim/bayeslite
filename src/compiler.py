@@ -31,7 +31,7 @@ To compile a parsed BQL query:
 import StringIO
 import contextlib
 
-import bayeslite.ast as ast
+import bayeslite.bayeslite_ast as ast
 import bayeslite.bqlfn as bqlfn
 import bayeslite.core as core
 

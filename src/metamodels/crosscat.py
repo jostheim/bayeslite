@@ -289,7 +289,7 @@ class CrosscatMetamodel(metamodel.IBayesDBMetamodel):
         ''' % (','.join('t.%s' % (qcn,) for qcn in qcns), qt),
             (generator_id,))
         t = []
-        for row in cursor:
+        for row in tqdm(cursor):
             from array import array
             t1 = array('f')
             for value, (_name, colno) in zip(row, columns):
